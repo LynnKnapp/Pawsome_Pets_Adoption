@@ -62,4 +62,4 @@ dogRouter.delete('/:_id', (req, res, next) =>{
 
 
 
-moduke.exports = dogRoute
+module.exports = dogRouter
