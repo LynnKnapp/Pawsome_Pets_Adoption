@@ -33,11 +33,12 @@ dogRouter.post('/', (req, res, next)=>{
             res.status(500)
             return next(err)
         }
+        return res.status(200).send(newDog)
     })
-    return res.status(200).send(newDog)
+    
 })
 
-dogRouter.put('/',(req,res,next)=>[
+dogRouter.put('/:_id',(req,res,next)=>[
     Dog.findOneAndUpdate(
         {_id: req.params._id},
         req.body,
@@ -51,7 +52,7 @@ dogRouter.put('/',(req,res,next)=>[
         })    
 ])
 dogRouter.delete('/:_id', (req, res, next) =>{
-    Dog.findOneByIdAndDelete(req.params._id, (err, dog) =>{
+    Dog.findByIdAndDelete(req.params._id, (err, dog) =>{
         if(err){
             res.status(500)
         }
