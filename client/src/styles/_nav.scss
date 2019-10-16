@@ -1,0 +1,16 @@
+nav {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        color: $darkText;
+    }
+
+    a:hover {
+        color: $accent;
+    }
+}
