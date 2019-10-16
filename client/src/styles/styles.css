@@ -18,6 +18,14 @@ nav a:hover {
   color: #5e4b50;
 }
 
+.testimony {
+  border: red solid 1px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
 footer {
   border: black solid 1px;
   height: 200px;
