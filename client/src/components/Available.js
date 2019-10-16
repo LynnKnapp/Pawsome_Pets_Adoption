@@ -1,12 +1,15 @@
 import React from 'react'
-import axios from 'axios'
+import DogList from './DogList'
 
 const Available = () => {
-    return (
-        <div>
-            available
-        </div>
-    )
-}
 
+        return (
+            <div>
+                <DogList />
+                {/* <CatList /> */}
+            </div>
+        )
+    }
+
+    
 export default Available
