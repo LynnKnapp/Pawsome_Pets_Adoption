@@ -5,6 +5,7 @@ import About from './About'
 import Available from './Available'
 import Adopt from './Adopt'
 import Footer from './Footer'
+import '../styles/styles.css'
 
 const App = () => {
     return (
