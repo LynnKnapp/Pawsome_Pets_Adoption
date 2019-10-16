@@ -13,7 +13,7 @@ catRouter.get("/", (req, res, next) => {
 })
 
 catRouter.get("/:_id", (req, res, next) => {
-    Cat.findOne(req.params._id, (err, cats) => {
+    Cat.findById(req.params._id, (err, cats) => {
         if (err) {
             res.status(500)
             return next(err)
@@ -29,11 +29,11 @@ catRouter.post("/", (req, res, next) => {
             res.status(500)
             return next(err)
         }
-        return res.status(200).send(cats)
+        return res.status(200).send(newCat)
     })
 })
 
-catRouter.delete("/_id", (req, res, next) => {
+catRouter.delete("/:_id", (req, res, next) => {
     Cat.findByIdAndRemove(req.params._id, (err, cats) => {
         if (err) {
             res.status(500)
