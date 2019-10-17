@@ -5,6 +5,9 @@ nav {
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
@@ -53,13 +56,13 @@ nav div {
   border: blue solid 1px;
 }
 
-.aboutMain {
+.homeMain {
   padding: 15%;
   padding-top: 0;
   padding-bottom: 50px;
 }
 
-.aboutMain div {
+.homeMain div {
   margin-top: 50px;
 }
 
@@ -78,6 +81,34 @@ nav div {
   padding: 15px;
 }
 
+.adopt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5%;
+}
+
+.adopt section {
+  width: 100%;
+  padding: 30px;
+  margin: 25px;
+  border: 1px solid black;
+}
+
+.adopt section div {
+  border: 1px red solid;
+  padding: 10px;
+  margin: 20px;
+  height: 250px;
+}
+
 footer {
   border: black solid 1px;
   height: 200px;
@@ -89,5 +120,9 @@ footer {
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+h1 {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

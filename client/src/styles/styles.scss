@@ -1,5 +1,6 @@
 @import './variables';
 @import './nav';
+@import './home';
 @import './available';
 @import './adopt';
 @import './about';
@@ -9,4 +10,8 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+h1 {
+    text-align: center;
 }

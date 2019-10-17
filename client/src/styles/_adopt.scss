@@ -1,0 +1,21 @@
+.adopt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+
+    section {
+        width: 100%;
+        padding: 30px;
+        margin: 25px;
+        border: 1px solid black;
+
+        div {
+            border: 1px red solid;
+            padding: 10px;
+            margin: 20px;
+            height: 250px;
+        }
+    }
+}
+

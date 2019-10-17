@@ -7,11 +7,12 @@ const Nav = () => {
     return (
         <nav>
             
-            <h1>P<FontAwesomeIcon icon={faPaw} size="xs" transform={{ rotate: -40 }} />WESOME PETS</h1>
+            <Link to="/"><h1>P<FontAwesomeIcon icon={faPaw} size="xs" transform={{ rotate: -40 }} />WESOME PETS</h1></Link>
             <div>
-                <Link to="/">About</Link>
+                
                 <Link to="/available">Available</Link>
                 <Link to="/adopt">Adopt</Link>
+                <Link to="/about">About</Link>
             </div>
             
         </nav>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route} from 'react-router-dom'
 import Nav from './Nav'
 import About from './About'
+import Home from './Home'
 import Available from './Available'
 import Adopt from './Adopt'
 import Footer from './Footer'
@@ -14,7 +15,7 @@ const App = () => {
 
             <Switch>
                 <Route exact path="/">
-                    <About />
+                    <Home />
                 </Route>
 
                 <Route path="/available">
@@ -23,6 +24,10 @@ const App = () => {
 
                 <Route path="/adopt">
                     <Adopt />
+                </Route>
+                
+                <Route path="/about">
+                    <About />
                 </Route>
             </Switch>
 
