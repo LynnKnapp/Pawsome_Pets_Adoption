@@ -1,16 +1,22 @@
 nav {
     border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     padding: 20px;
 
     a {
-        font-size: 25px;
+        font-size: 20px;
         text-decoration: none;
         color: $darkText;
     }
 
     a:hover {
         color: $accent;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
