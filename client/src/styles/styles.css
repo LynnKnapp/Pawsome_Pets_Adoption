@@ -26,6 +26,48 @@ nav a:hover {
       grid-template-columns: 1fr 1fr;
 }
 
+.testimonyLeft {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.testimonyRight {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.images {
+  height: 200px;
+  border: blue solid 1px;
+}
+
+.aboutMain {
+  padding: 15%;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.aboutMain div {
+  margin-top: 50px;
+}
+
+.whoWeAre {
+  padding: 50px 30px;
+  width: 60%;
+  margin: auto;
+}
+
+.whoWeAre h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.whoWeAre p {
+  padding: 15px;
+}
+
 footer {
   border: black solid 1px;
   height: 200px;
