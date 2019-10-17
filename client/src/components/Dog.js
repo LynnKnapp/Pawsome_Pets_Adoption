@@ -6,6 +6,7 @@ const Dog = (props) => {
         return (
             <div>
                 <h3>Name: {props.name}</h3>
+                <h4>Gender{props.gender}</h4>
                 <img src={props.image} alt='dog'/>
                 <h5>Breed: {props.breed}</h5>
                 <h5>Size: {props.size}</h5>
