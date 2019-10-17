@@ -1,21 +1,31 @@
 nav {
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   padding: 20px;
 }
 
 nav a {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   color: #0f0f0f;
 }
 
 nav a:hover {
   color: #5e4b50;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimony {
