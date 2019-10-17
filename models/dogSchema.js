@@ -12,7 +12,7 @@ const dogSchema = new Schema({
     },
     size: {
         type: String,
-        enum: ["small", "medium", "large", "extra large"]
+        enum: ["Small", "Medium", "Large", "Extra-Large"]
     },
     age: {
         type: Number
@@ -36,6 +36,10 @@ const dogSchema = new Schema({
     furColor: {
         type: String,
         default: "unknown"
+    },
+    gender: {
+        type: String,
+        enum: ["Female", "Male"]
     }
 })
 
