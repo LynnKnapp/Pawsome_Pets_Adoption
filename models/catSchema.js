@@ -28,6 +28,10 @@ const catSchema = new Schema({
     furColor: {
         type: String,
         default: "unknown"
+    },
+    gender: {
+        type: String,
+        enum: ["Female", "Male"]
     }
 })
 
