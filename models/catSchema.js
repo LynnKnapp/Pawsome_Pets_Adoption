@@ -12,7 +12,8 @@ const catSchema = new Schema({
     },
     age: {
         type: String,
-        default: true
+        default: "unknown",
+        required: true
     },
     goodWithKids: {
         type: Boolean,

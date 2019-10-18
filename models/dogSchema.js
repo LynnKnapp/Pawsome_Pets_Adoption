@@ -16,7 +16,8 @@ const dogSchema = new Schema({
     },
     age: {
         type: String,
-        default: true
+        default: "unknown",
+        required: true,
     },
     shed: {
         type: Boolean,
