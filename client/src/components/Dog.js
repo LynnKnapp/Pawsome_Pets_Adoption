@@ -1,11 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
-const Dog = (props) => {
-    
+const Dog = (props) => {    
         return (
             <div>
-                <h3>Name: {props.name}</h3>
+                <h3> Name: {props.name}</h3>
                 <h4>Gender{props.gender}</h4>
                 <img src={props.image} alt='dog'/>
                 <h5>Breed: {props.breed}</h5>
@@ -16,7 +16,11 @@ const Dog = (props) => {
                 {props.shed ? <h5>Sheds: Yes</h5> : <h5>Sheds: No</h5>}
                 {props.goodWithKids ? <h5>Good with Kids: Yes!</h5> : <h5> Good with Kids: Unfortunately, No</h5>}
                 {props.goodWithPets ? <h5>Good with Other Pets: Yes!</h5> : <h5>Good with Kids: Better kept with no other pets</h5>}
+
+                <Link to={{pathname: '/adoption', state:{animalId: props._id, dogArray: props.dogArray} }}
+                >Adopt Me</Link>
             </div>
+            
         )
     }
 
