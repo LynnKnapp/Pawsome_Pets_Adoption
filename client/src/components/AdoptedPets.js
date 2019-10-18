@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Adopt = () => {
+const AdoptedPets = () => {
     return (
         <div className="adopt">
             <section className="adoptDog">
@@ -32,4 +32,4 @@ const Adopt = () => {
     )
 }
 
-export default Adopt
+export default AdoptedPets

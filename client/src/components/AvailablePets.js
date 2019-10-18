@@ -2,7 +2,7 @@ import React from 'react'
 import DogList from './DogList'
 import CatList from './CatList'
 
-const Available = () => {
+const AvailablePets = () => {
 
         return (
             <div>
@@ -13,4 +13,4 @@ const Available = () => {
     }
 
     
-export default Available
+export default AvailablePets

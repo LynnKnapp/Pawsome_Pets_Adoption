@@ -28,10 +28,11 @@ class DogList extends Component {
 
     render() {
         const mappedDogs = this.state.dogs.map(dog => {
-            // console.log(dog)
            return <Dog 
+           dogArray= {this.state.dogs}
                 {...dog}
                 key = {dog._id}
+
             />
         })
         return (

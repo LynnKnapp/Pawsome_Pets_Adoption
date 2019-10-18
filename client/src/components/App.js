@@ -1,12 +1,13 @@
 import React from 'react'
 import { Switch, Route} from 'react-router-dom'
 import Nav from './Nav'
-import About from './About'
+import About from './AboutUs'
 import Home from './Home'
-import Available from './Available'
-import Adopt from './Adopt'
+import Available from './AvailablePets'
+import Adopt from './AdoptedPets'
 import Footer from './Footer'
 import '../styles/styles.css'
+import AnimalDetails from './AnimalDetails'
 
 const App = () => {
     return (
@@ -14,6 +15,9 @@ const App = () => {
             <Nav />
 
             <Switch>
+                <Route path="/adoption">
+                    <AnimalDetails/>
+                </Route> 
                 <Route exact path="/">
                     <Home />
                 </Route>
@@ -22,7 +26,7 @@ const App = () => {
                     <Available />
                 </Route>
 
-                <Route path="/adopt">
+                <Route path="/recently-adopted">
                     <Adopt />
                 </Route>
                 
