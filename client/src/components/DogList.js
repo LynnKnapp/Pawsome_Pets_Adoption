@@ -28,7 +28,7 @@ class DogList extends Component {
 
     render() {
         const mappedDogs = this.state.dogs.map(dog => {
-            console.log(dog)
+            // console.log(dog)
            return <Dog 
                 {...dog}
                 key = {dog._id}

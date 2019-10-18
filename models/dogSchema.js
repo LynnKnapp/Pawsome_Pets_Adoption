@@ -15,7 +15,9 @@ const dogSchema = new Schema({
         enum: ["Small", "Medium", "Large", "Extra-Large"]
     },
     age: {
-        type: Number
+        type: String,
+        default: "unknown",
+        required: true,
     },
     shed: {
         type: Boolean,
