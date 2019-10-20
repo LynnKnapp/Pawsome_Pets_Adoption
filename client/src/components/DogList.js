@@ -36,7 +36,7 @@ class DogList extends Component {
             />
         })
         return (
-            <div>
+            <div id="dogList" className="notHidden">
             {mappedDogs}
             </div>
         )

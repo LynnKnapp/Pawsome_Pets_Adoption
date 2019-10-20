@@ -1,0 +1,24 @@
+.available {
+    div {
+        img {
+        width: 300px;
+        }
+        div {
+            border: solid 1px black;
+            width: 400px;
+        }
+        // display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+.indDog {
+    background: pink;
+}
+
+.indCat {
+    background: green;
+}

@@ -4,9 +4,8 @@ import {Link} from 'react-router-dom'
 
 const Dog = (props) => {    
         return (
-            <div>
+            <div className="indDog">
                 <h3> Name: {props.name}</h3>
-                <h4>Gender{props.gender}</h4>
                 <img src={props.image} alt='dog'/>
                 <h5>Breed: {props.breed}</h5>
                 <h5>Gender: {props.gender}</h5>

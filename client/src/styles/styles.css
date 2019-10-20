@@ -2,12 +2,13 @@ nav {
   border: 1px solid black;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background: antiquewhite;
 }
 
 nav a {
@@ -81,6 +82,35 @@ nav div {
   padding: 15px;
 }
 
+.available div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.available div img {
+  width: 300px;
+}
+
+.available div div {
+  border: solid 1px black;
+  width: 400px;
+}
+
+.indDog {
+  background: pink;
+}
+
+.indCat {
+  background: green;
+}
+
 .adopt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,11 +123,12 @@ nav div {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 5%;
+  padding-top: 10px;
 }
 
 .adopt section {
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   margin: 25px;
   border: 1px solid black;
 }
@@ -106,6 +137,9 @@ nav div {
   border: 1px red solid;
   padding: 10px;
   margin: 20px;
+}
+
+.adopt section div img {
   height: 250px;
 }
 
@@ -124,5 +158,26 @@ footer {
 
 h1 {
   text-align: center;
+}
+
+h2 {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.fa-paw {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.notHidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */

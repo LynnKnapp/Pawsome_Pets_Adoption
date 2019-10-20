@@ -5,7 +5,8 @@ import CatList from './CatList'
 const AvailablePets = () => {
 
         return (
-            <div>
+            <div className="available">
+                <button>Change View</button>
                 <DogList />
                 <CatList />
             </div>
