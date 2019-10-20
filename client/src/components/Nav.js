@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
     return (
         <nav>   
-            <Link to="/"><h1>P<i class="fas fa-paw fa-xs"></i>WESOME PETS</h1></Link>
+            <Link to="/"><h1>P<i className="fas fa-paw fa-xs"></i>WESOME PETS</h1></Link>
             <div>   
-                <Link to="/available">Pets for Adoption</Link>
-                <Link to="/adopt">Pets Recently Adopted</Link>
+                <Link to="/available">Adoption</Link>
+                <Link to="/adopt">Recently Adopted</Link>
                 <Link to="/about">About Us</Link>
             </div>    
         </nav>

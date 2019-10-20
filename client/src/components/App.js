@@ -4,7 +4,7 @@ import Nav from './Nav'
 import About from './AboutUs'
 import Home from './Home'
 import Available from './AvailablePets'
-import Adopt from './AdoptedPets'
+import AdoptedPets from './AdoptedPets'
 import Footer from './Footer'
 import '../styles/styles.css'
 import AnimalDetails from './AnimalDetails'
@@ -26,8 +26,8 @@ const App = () => {
                     <Available />
                 </Route>
 
-                <Route path="/recently-adopted">
-                    <Adopt />
+                <Route path="/adopt">
+                    <AdoptedPets />
                 </Route>
                 
                 <Route path="/about">
