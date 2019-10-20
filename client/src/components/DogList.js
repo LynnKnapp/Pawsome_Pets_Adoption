@@ -1,45 +1,39 @@
-import React, {Component} from 'react'
-import Dog from './Dog'
-import axios from 'axios'
+import React, { Component } from "react";
+import Dog from "./Dog";
+import axios from "axios";
 
 class DogList extends Component {
     constructor() {
-        super()
+        super();
         this.state = {
             dogs: []
-        }
+        };
     }
 
-    componentDidMount(){
-        this.getDoogies()
+    componentDidMount() {
+        this.getDoogies();
     }
 
     getDoogies = () => {
-        axios.get("/dogs")
+        axios
+            .get("/dogs")
             .then(res => {
                 this.setState({
                     dogs: res.data
-                })
+                });
             })
-            .catch(err => console.log(err))
-    }
-
-    
+            .catch(err => console.log(err));
+    };
 
     render() {
         const mappedDogs = this.state.dogs.map(dog => {
-           return <Dog 
-           dogArray= {this.state.dogs}
-                {...dog}
-                key = {dog._id}
-
-            />
-        })
+            return <Dog dogArray={this.state.dogs} {...dog} key={dog._id} />;
+        });
         return (
             <div id="dogList" className="notHidden">
-            {mappedDogs}
+                {mappedDogs}
             </div>
-        )
+        );
     }
 }
-export default DogList
+export default DogList;
