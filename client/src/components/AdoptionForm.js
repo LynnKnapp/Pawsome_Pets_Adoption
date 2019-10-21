@@ -6,7 +6,7 @@ class AdoptionForm extends Component{
         this.state={
             name: "",
             emailaddress: "",
-            usrtel: Number,
+            usrtel: "",
             contactTime: ""
 
         }
@@ -18,13 +18,13 @@ class AdoptionForm extends Component{
         })
     }
     handleSubmit = e =>{
-        e.prevent.default()
-        const submits ={
-            name: this.state.name,
-            emailaddress: this.state.emailaddress,
-            usrtel: this.state.usrtel,
-            contactTime: this.state.contactTime
-        }
+        e.preventDefault()
+        const submits = `
+            name: ${this.state.name},
+            emailaddress: ${this.state.emailaddress},
+            usrtel: ${this.state.usrtel},
+            contactTime: ${this.state.contactTime}
+        `
         alert(submits)
     }
     render(){
@@ -42,7 +42,7 @@ class AdoptionForm extends Component{
                 type="email"
                 name="emailaddress"
                 value={this.state.email}
-                onchange={this.handleChange}
+                onChange={this.handleChange}
                 placeholder="Email Address"/>Email Address
              <input
                 type="tel" 
@@ -57,10 +57,10 @@ class AdoptionForm extends Component{
             </select>       
             <select>
                 <option placeholder="Best time to contact">Best time to contact</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
+                <option name="contactTime" value="morning">Morning</option>
+                <option name="contactTime" value="afternoon">Afternoon</option>
             </select>
-            <button onchange={this.handleSubmit}>Submit</button>       
+            <button onChange={this.handleSubmit}>Submit</button>       
             </form> 
             </div>
         )
