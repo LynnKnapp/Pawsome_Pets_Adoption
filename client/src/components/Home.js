@@ -3,6 +3,8 @@ import Carousel from './Carousel'
 const Home = () => {
     return (
         <div className="homeMain">
+        <h3>Our Mission Statement</h3>
+        <p>To provide no-kill solutions to reduce the number of homeless cats and dogs in Salt Lake County through education, rehabilitation, and re-homing with the support and cooperation of our community.</p>
             <Carousel />
             <section className="blog">
                 <h2>Sweetened with Vanilla</h2>
