@@ -32,18 +32,18 @@ class AdoptionForm extends Component{
             <div>
             <h2>Please fill out this form if interested in adopting this pet.</h2>
               <form onSubmit={this.handleSubmit}> 
-                <input
+                Full Name<input
                 type="text" 
                 name="name" 
                 value={this.state.name} 
                 onChange={this.handleChange} 
-                placeholder="Name"/>Full Name
+                placeholder="Name"/>Email Address
               <input
                 type="email"
                 name="emailaddress"
                 value={this.state.email}
                 onChange={this.handleChange}
-                placeholder="Email Address"/>Email Address
+                placeholder="Email Address"/>Contact Number
              <input
                 type="tel" 
                 name="usrtel"
