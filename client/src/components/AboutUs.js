@@ -3,6 +3,7 @@ import React from 'react'
 const About = () => {
     return (
         <div>
+
            <h1>About Us</h1> 
            <h3>Our Mission Statement</h3>
            <p>Pawesome Pets, a Utah 501(c), is a non-euthanizing animal shelter that rescues and finds homes for an average of 1,000 dogs and cats each year. Since 2008, we have dedicated ourselves to reducing the tragedies of pet overpopulation and the euthanasia of healthy adoptable pets.
