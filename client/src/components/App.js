@@ -12,25 +12,20 @@ const App = () => {
     return (
         <main>
             <Nav />
-
             <Switch>
                 <Route exact path="/">
                     <Home />
                 </Route>
-
                 <Route path="/available">
                     <Available />
                 </Route>
-
                 <Route path="/adopt">
                     <Adopt />
-                </Route>
-                
+                </Route>    
                 <Route path="/about">
                     <About />
                 </Route>
             </Switch>
-
             <Footer />
         </main>
     )
