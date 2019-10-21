@@ -4,8 +4,9 @@
         width: 300px;
         }
         div {
-            border: solid 1px black;
+            border: solid 4px gray;
             width: 400px;
+            margin: 25px;
         }
         // display: flex;
         flex-direction: row;
@@ -16,9 +17,9 @@
 }
 
 .indDog {
-    background: pink;
+    background: rgb(255, 150, 102);
 }
 
 .indCat {
-    background: green;
+    background: rgb(0, 128, 128);
 }
