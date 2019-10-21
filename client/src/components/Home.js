@@ -1,26 +1,11 @@
 import React from 'react'
-// import ReactDOM from 'react-dom'
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
+import Carousel from './Carousel'
 
 
 const Home = () => {
-    // const petCarousel = React.createClass({
-    //     render() {
-    //         return (
-    //             <Carousel >
-
-    //             </Carousel>
-
-    //         )
-    //     }
-    // })
     return (
         <div className="homeMain">
-            <div className="images">
-            {/* {ReactDOM.render(<petCarousel />, document.querySelector('.demo-carousel'))} */}
-
-            </div>
+            <Carousel />
 
             <section className="whoWeAre">
                 <h2>Who We Are</h2>
