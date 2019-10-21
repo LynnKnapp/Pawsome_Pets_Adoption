@@ -15,7 +15,6 @@ const Dog = (props) => {
                 {props.shed ? <h5>Sheds: Yes</h5> : <h5>Sheds: No</h5>}
                 {props.goodWithKids ? <h5>Good with Kids: Yes!</h5> : <h5> Good with Kids: Unfortunately, No</h5>}
                 {props.goodWithPets ? <h5>Good with Other Pets: Yes!</h5> : <h5>Good with Kids: Better kept with no other pets</h5>}
-
                 <Link to={{pathname: '/adoption', state:{animalId: props._id, dogArray: props.dogArray} }}
                 >Adopt Me</Link>
             </div>

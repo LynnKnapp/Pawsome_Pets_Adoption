@@ -3,30 +3,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .testimonyLeft {
     grid-column: 1 / 2;
 }
-
 .testimonyRight {
     grid-column: 2 / 3;
 }
-
 .images {
     height: 200px;
     border: blue solid 1px;
 }
-
 .homeMain {
     padding: 15%;
     padding-top: 0;
     padding-bottom: 50px;
-
     div {
         margin-top: 10px;
     }
 }
-
 .whoWeAre {
     padding: 50px 30px;
     width: 60%;
@@ -36,6 +30,22 @@
         padding: 20px;
     }
     p {
+        padding: 15px;
+    }
+}
+.blog {
+    img {
+        width: 250px;
+        float: left;
+        margin: 10px;
+    }
+    
+    p {
+        font-size: 25px;
+        padding: 15px;
+    }
+    h3 {
+        font-size: 20px;
         padding: 15px;
     }
 }

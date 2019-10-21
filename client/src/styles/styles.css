@@ -83,6 +83,22 @@ nav div {
   padding: 15px;
 }
 
+.blog img {
+  width: 250px;
+  float: left;
+  margin: 10px;
+}
+
+.blog p {
+  font-size: 25px;
+  padding: 15px;
+}
+
+.blog h3 {
+  font-size: 20px;
+  padding: 15px;
+}
+
 .available div {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -100,16 +116,17 @@ nav div {
 }
 
 .available div div {
-  border: solid 1px black;
+  border: solid 4px gray;
   width: 400px;
+  margin: 25px;
 }
 
 .indDog {
-  background: pink;
+  background: #ff9666;
 }
 
 .indCat {
-  background: green;
+  background: teal;
 }
 
 .adopt {
