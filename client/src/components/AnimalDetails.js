@@ -17,7 +17,7 @@ const AnimalDetails = (props) => {
     return (
         <div>
             <h1>{currentAnimal.breed}</h1>
-            
+            <AdoptionForm/>    
         </div>
     )
 }
