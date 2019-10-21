@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import AdoptionForm from './AdoptionForm.js'
 
 const AnimalDetails = (props) => {
     
