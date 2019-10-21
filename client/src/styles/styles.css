@@ -9,6 +9,7 @@ nav {
   position: sticky;
   top: 0;
   background: antiquewhite;
+  z-index: 3;
 }
 
 nav a {
@@ -64,7 +65,7 @@ nav div {
 }
 
 .homeMain div {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .whoWeAre {
@@ -147,6 +148,24 @@ footer {
   border: black solid 1px;
   height: 200px;
   color: #0f0f0f;
+}
+
+.carouselBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.carouselBtns button {
+  border: none;
+  margin: 25px;
+}
+
+.fa {
+  font-size: 30px;
 }
 
 * {
