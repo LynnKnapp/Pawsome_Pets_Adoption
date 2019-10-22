@@ -35,30 +35,39 @@ class DonateForm extends Component{
         return(
             <div>
               <form onSubmit={this.handleSubmit}>
-                Donation Amount<input
+                  <label>Donation Amount</label>
+                <input
                 type="text" 
                 name="donation" 
                 value={this.state.donation} 
                 onChange={this.handleChange} 
-                placeholder="Donation"/>Name
+                placeholder="Donation"/>
+                
+                <label>Name</label>
                <input
                 type="text" 
                 name="name" 
                 value={this.state.name} 
                 onChange={this.handleChange} 
-                placeholder="Name"/>Email Address
+                placeholder="Name"/>
+                
+                <label>Email Address</label>
                 <input 
                 type="text" 
                 name="email" 
                 value={this.state.email} 
                 onChange={this.handleChange} 
-                placeholder="Email"/>Address
+                placeholder="Email"/>
+                
+                <label>Address</label>
                 <input
                 type="text" 
                 name="address" 
                 value={this.state.address} 
                 onChange={this.handleChange} 
-                placeholder="Address"/>Phone
+                placeholder="Address"/>
+                
+                <label>Phone</label>
                 <input 
                 type="tel" 
                 name="phone" 
