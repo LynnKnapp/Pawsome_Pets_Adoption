@@ -34,6 +34,7 @@ class DonateForm extends Component{
     render(){
         return(
             <div>
+            <h1>Thank you for donating to Pawesome Pets.  Your support is greatly appreciated!</h1>
               <form onSubmit={this.handleSubmit}>
                 Donation Amount<input
                 type="text" 

@@ -9,25 +9,29 @@ import Footer from './Footer'
 import '../styles/styles.css'
 import AnimalDetails from './AnimalDetails'
 import DonateForm from './DonateForm'
+import Searchbar from './Searchbar'
 
 const App = () => {
     return (
         <main>
-            <Nav />
-
-            <Switch>
-                <Route path="/adoption">
-                    <AnimalDetails/>
-                </Route> 
+              <Nav />
+              <Switch>
+              <Route path="/adoption">
+              <AnimalDetails/>
+              </Route> 
+              {/*
+              */}
                 <Route path="/donate"><DonateForm /></Route>
                 <Route exact path="/">
-                    <Home />
+                <Home />
                 </Route>
-
+                <Route path="/searchbar">
+                <Searchbar/>
+                </Route> 
                 <Route path="/available">
-                    <Available />
+                <Available />
                 </Route>
-
+                
                 <Route path="/adopt">
                     <AdoptedPets />
                 </Route>
@@ -37,7 +41,7 @@ const App = () => {
                 </Route>
             </Switch>
 
-            <Footer />
+            <Footer />  
         </main>
     )
 }

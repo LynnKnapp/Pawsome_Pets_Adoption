@@ -12,6 +12,7 @@ const Nav = (props) => {
                 <Link to="/adopt">Recently Adopted</Link>
                 <Link to="/about">About Us</Link>
                 <Link to="/donate">Donate</Link>
+                <Link to="/searchbar">Search</Link>
             </div>    
         </nav>
     )
