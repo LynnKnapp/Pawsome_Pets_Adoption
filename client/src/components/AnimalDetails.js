@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 import AdoptionForm from './AdoptionForm.js'
 
 const AnimalDetails = (props) => {
+    console.log(props)
     
     let currentAnimal
 

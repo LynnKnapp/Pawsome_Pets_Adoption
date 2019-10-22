@@ -8,6 +8,7 @@ import AdoptedPets from './AdoptedPets'
 import Footer from './Footer'
 import '../styles/styles.css'
 import AnimalDetails from './AnimalDetails'
+import DonateForm from './DonateForm'
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="/adoption">
                     <AnimalDetails/>
                 </Route> 
+                <Route path="/donate"><DonateForm /></Route>
                 <Route exact path="/">
                     <Home />
                 </Route>
