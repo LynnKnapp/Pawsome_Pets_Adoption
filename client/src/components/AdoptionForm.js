@@ -7,7 +7,8 @@ class AdoptionForm extends Component{
             name: "",
             emailaddress: "",
             usrtel: "",
-            contactTime: ""
+            contactTime: "",
+
 
         }
         
@@ -57,8 +58,8 @@ class AdoptionForm extends Component{
             </select>       
             <select>
                 <option placeholder="Best time to contact">Best time to contact</option>
-                <option name="contactTime" value="morning">Morning</option>
-                <option name="contactTime" value="afternoon">Afternoon</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
             </select>
             <button onChange={this.handleSubmit}>Submit</button>       
             </form> 
