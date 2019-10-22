@@ -9,6 +9,7 @@ class Carousel extends React.Component {
                 naturalSlideHeight={50}
                 totalSlides={10}
                 isPlaying= {true}
+                className="carousel"
                 infinite={true}>
                 
                 <Slider>

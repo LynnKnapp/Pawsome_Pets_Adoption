@@ -1,5 +1,4 @@
 nav {
-  border: 1px solid black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -8,18 +7,18 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: antiquewhite;
+  background: #F48220;
   z-index: 3;
 }
 
 nav a {
   font-size: 20px;
   text-decoration: none;
-  color: #0f0f0f;
+  color: #dddddd;
 }
 
 nav a:hover {
-  color: #5e4b50;
+  color: #342E37;
 }
 
 nav div {
@@ -33,33 +32,8 @@ nav div {
           align-items: center;
 }
 
-.testimony {
-  border: red solid 1px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.testimonyLeft {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-}
-
-.testimonyRight {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-}
-
-.images {
-  height: 200px;
-  border: blue solid 1px;
-}
-
 .homeMain {
-  padding: 15%;
+  padding: 5%;
   padding-top: 0;
   padding-bottom: 50px;
 }
@@ -68,35 +42,55 @@ nav div {
   margin-top: 10px;
 }
 
-.whoWeAre {
-  padding: 50px 30px;
-  width: 60%;
+.blog {
+  width: 80%;
   margin: auto;
-}
-
-.whoWeAre h2 {
-  text-align: center;
-  padding: 20px;
-}
-
-.whoWeAre p {
-  padding: 15px;
+  padding-bottom: 150px;
+  padding-top: 150px;
 }
 
 .blog img {
   width: 250px;
   float: left;
-  margin: 10px;
+  margin: 20px;
+  margin-bottom: 10px;
 }
 
 .blog p {
-  font-size: 25px;
+  font-size: 30px;
   padding: 15px;
+  font-style: italic;
 }
 
-.blog h3 {
-  font-size: 20px;
-  padding: 15px;
+.blog h4 {
+  position: relative;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 60px;
+  font-style: italic;
+  left: 70px;
+  top: 40px;
+  color: #F48220;
+  text-decoration: underline;
+}
+
+.mission {
+  font-size: 25px;
+  padding: 150px;
+  margin-bottom: 300px;
+  margin: auto;
+  line-height: 40px;
+  width: 70%;
+  background: #F48220;
+  border-radius: 20px;
+  color: #dddddd;
+}
+
+.mission p {
+  padding-top: 30px;
 }
 
 .available div {
@@ -122,11 +116,11 @@ nav div {
 }
 
 .indDog {
-  background: #c5d5eb;
+  background: #2092F4;
 }
 
 .indCat {
-  background: #b5d3d3;
+  background: #2092F4;
 }
 
 .adopt {
@@ -148,23 +142,95 @@ nav div {
   width: 100%;
   padding: 20px;
   margin: 25px;
-  border: 1px solid black;
+  border: 4px solid #342E37;
+  -webkit-box-shadow: 5px 5px 8px #342E37;
+          box-shadow: 5px 5px 8px #342E37;
+  border-radius: 8px;
+  background: #F48220;
 }
 
-.adopt section div {
-  border: 1px red solid;
+.adopt section h3 {
+  color: #dddddd;
+}
+
+.adopt div {
+  background: #dddddd;
+  border-radius: 10px;
   padding: 10px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.adopt div img {
+  height: 170px;
+}
+
+.adopt div p {
+  color: #342E37;
+}
+
+.aboutPage {
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.aboutPage p {
+  font-size: 25px;
+}
+
+.aboutPage div {
+  padding: 50px;
   margin: 20px;
 }
 
-.adopt section div img {
-  height: 250px;
+.aboutPage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.aboutPage li {
+  font-size: 20px;
+  padding: 5px;
+  list-style-type: circle;
+}
+
+.whoWeAre {
+  border: 4px solid #342E37;
+  -webkit-box-shadow: 5px 5px 8px #342E37;
+          box-shadow: 5px 5px 8px #342E37;
+  border-radius: 8px;
+}
+
+.ourServices {
+  border: 4px solid #342E37;
+  -webkit-box-shadow: 5px 5px 5px #342E37;
+          box-shadow: 5px 5px 5px #342E37;
+  border-radius: 8px;
+}
+
+.ourNeeds {
+  border: 4px solid #342E37;
+  -webkit-box-shadow: 5px 5px 5px #342E37;
+          box-shadow: 5px 5px 5px #342E37;
+  border-radius: 8px;
 }
 
 footer {
   border: black solid 1px;
   height: 200px;
-  color: #0f0f0f;
+  color: #342E37;
+}
+
+.carousel {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 80px;
 }
 
 .carouselBtns {
@@ -179,6 +245,7 @@ footer {
 .carouselBtns button {
   border: none;
   margin: 25px;
+  background: #dddddd;
 }
 
 .fa {
@@ -192,6 +259,11 @@ footer {
   padding: 0px;
 }
 
+body {
+  background: #dddddd;
+  color: #342E37;
+}
+
 h1 {
   text-align: center;
 }
@@ -199,6 +271,12 @@ h1 {
 h2 {
   padding: 30px;
   font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -215,5 +293,59 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+form {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: #F48220;
+  -webkit-box-shadow: 5px 5px 5px #342E37;
+          box-shadow: 5px 5px 5px #342E37;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #dddddd;
+  margin: 50px 10px 30px 10px;
+  color: #342E37;
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
+  margin: 5px;
+  color: #342E37;
+  border-radius: 5px;
+  background: #dddddd;
+}
+
+select {
+  margin: 10px 25px;
+  padding: 10px;
+  font-size: 20px;
+  background: #dddddd;
+  color: #342E37;
+}
+
+label {
+  color: #dddddd;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 1px 1px 5px #342E37;
 }
 /*# sourceMappingURL=styles.css.map */

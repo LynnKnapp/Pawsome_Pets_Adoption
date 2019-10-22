@@ -32,36 +32,44 @@ class AdoptionForm extends Component{
     render(){
         return(
             <div>
-            <h2>Please fill out this form if interested in adopting this pet.</h2>
-              <form onSubmit={this.handleSubmit}> 
-                Full Name<input
+              <form onSubmit={this.handleSubmit}>
+
+                <label>Full Name</label>
+                <input
                 type="text" 
                 name="name" 
                 value={this.state.name} 
                 onChange={this.handleChange} 
-                placeholder="Name"/>Email Address
+                placeholder="Name"/>
+                
+                <label>Email Address</label>
               <input
                 type="email"
                 name="emailaddress"
                 value={this.state.email}
                 onChange={this.handleChange}
-                placeholder="Email Address"/>Contact Number
+                placeholder="Email Address"/>
+                
+                <label>Contact Number</label>
              <input
                 type="tel" 
                 name="phone"
                 value={this.state.phone}
                 onChange={this.handleChange}
                 placeholder="Contact Number"/>
+                
             <select name='animalAdopting' value={this.state.animalAdopting} onChange={this.handleChange}>
                 <option placeholder="selectOne">Select pet to adopt</option>
                 <option value="cat">Cat</option>
                 <option value="dog">Dog</option>
-            </select>       
+            </select> 
+            
             <select name='contactTime' value={this.state.contactTime} onChange={this.handleChange}>
                 <option placeholder="Best time to contact">Best time to contact</option>
                 <option value="morning">Morning</option>
                 <option value="afternoon">Afternoon</option>
             </select>
+
             <button>Submit</button>       
             </form> 
             </div>
