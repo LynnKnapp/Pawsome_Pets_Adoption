@@ -1,4 +1,8 @@
-
+.carousel {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 80px;
+}
 
 .carouselBtns {
     display: flex;
@@ -7,6 +11,7 @@
     button {
         border: none;
         margin: 25px;
+        background: $lightText;
     }
     
 }
