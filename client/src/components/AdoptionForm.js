@@ -6,9 +6,9 @@ class AdoptionForm extends Component{
         this.state={
             name: "",
             emailaddress: "",
-            usrtel: "",
-            contactTime: "",
-
+            phone: "",
+            contactTime: "",   
+            animalAdopting: ""
 
         }
         
@@ -16,15 +16,16 @@ class AdoptionForm extends Component{
     handleChange = e =>{
         this.setState({
         [e.target.name]: e.target.value
-        })
+        }, () => console.log(this.state))
     }
     handleSubmit = e =>{
         e.preventDefault()
         const submits = `
             name: ${this.state.name},
             emailaddress: ${this.state.emailaddress},
-            usrtel: ${this.state.usrtel},
-            contactTime: ${this.state.contactTime}
+            phone: ${this.state.phone},
+            contactTime: ${this.state.contactTime},
+            animal: ${this.state.animalAdopting}
         `
         alert(submits)
     }
@@ -47,21 +48,21 @@ class AdoptionForm extends Component{
                 placeholder="Email Address"/>Contact Number
              <input
                 type="tel" 
-                name="usrtel"
-                value={this.state.usrtel}
+                name="phone"
+                value={this.state.phone}
                 onChange={this.handleChange}
                 placeholder="Contact Number"/>
-            <select>
+            <select name='animalAdopting' value={this.state.animalAdopting} onChange={this.handleChange}>
                 <option placeholder="selectOne">Select pet to adopt</option>
                 <option value="cat">Cat</option>
                 <option value="dog">Dog</option>
             </select>       
-            <select>
+            <select name='contactTime' value={this.state.contactTime} onChange={this.handleChange}>
                 <option placeholder="Best time to contact">Best time to contact</option>
                 <option value="morning">Morning</option>
                 <option value="afternoon">Afternoon</option>
             </select>
-            <button onChange={this.handleSubmit}>Submit</button>       
+            <button>Submit</button>       
             </form> 
             </div>
         )
