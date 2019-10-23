@@ -28,6 +28,10 @@
         border: 2px solid $darkText;
         box-shadow: 5px 5px 5px $accent;
     }
+    button:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
 }
 
 .indPet {
@@ -45,11 +49,11 @@
         margin: auto;
         display: block;
         padding: 10px;
-        text-decoration: none;
         color: $accent;
     }
 
     a:hover {
         color: $darkText;
+        cursor: pointer;
     }
 }
