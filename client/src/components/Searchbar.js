@@ -1,5 +1,8 @@
 import React,{Component,} from 'react'
 import axios from 'axios';
+import CatList from './CatList'
+import DogList from './DogList'
+
 
 class Searchbar extends Component{
     constructor(props){
@@ -7,25 +10,25 @@ class Searchbar extends Component{
         this.state={
             search: '',
             animals: [],
-            
+            searchResults: [],
         }
     }
     componentDidMount() { 
           axios.get('/cats')
           .then(res =>{
-            console.log('res.data in search for cats',res.data)
-            this.setState({
-                animals: [res.data]
-            })
+            // console.log('res.data in search for cats',res.data)
+            this.setState(prevState => ({
+                animals: [...prevState.animals, ...res.data]
+            }))
         })
         .catch(err => console.log(err))
         
         axios.get('/dogs')
         .then(res =>{
-            console.log(res.data)
-            this.setState({
-                animals: [res.data]
-            })
+            // console.log(res.data)
+            this.setState(prevState => ({
+                animals: [...prevState.animals, ...res.data]
+            }))
         })
         .catch(err => console.log(err))
         
@@ -39,19 +42,32 @@ class Searchbar extends Component{
     }
     handleSubmit=(e) => {
         e.preventDefault()
-        .then(res =>{
-            this.setState(prevState =>({
-                search: this.state.search,
-                animals: this.state.animals
-            }))    
+        // create a new array from this.state.animals filtering by breed.
+        const filteredPets = this.state.animals.filter((pet) => {
+            console.log('pet:', pet)
+            //return true if the search matches an animal
+            //search - String
+            //animals - Array of objects
+            //animal object - name, breed, sex, age, color
+            //filtered results - Array of specific objects
+            return true
         })
-        .catch(err => console.log(err))
+            this.setState(prevState => {
+                return {
+                    searchResults: filteredPets
+                }
+            }
+            )   
     }
+
     render(){
-        console.log(this.state)
+        // console.log(this.state)
         return(
-            <div>
-            </div>
+            <>
+                <form onSubmit = {this.handleSubmit}>
+                <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
+                </form>
+            </>
         )
     }
 }
