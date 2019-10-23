@@ -54,6 +54,8 @@ nav div {
   float: left;
   margin: 20px;
   margin-bottom: 10px;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
 }
 
 .blog p {
@@ -74,7 +76,7 @@ nav div {
   left: 70px;
   top: 40px;
   color: #F48220;
-  text-decoration: underline;
+  text-shadow: 5px 5px  10px grey;
 }
 
 .mission {
@@ -107,20 +109,54 @@ nav div {
 
 .available div img {
   width: 300px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
 }
 
 .available div div {
-  border: solid 4px gray;
   width: 400px;
   margin: 25px;
 }
 
-.indDog {
-  background: #2092F4;
+.available button {
+  padding: 15px;
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #dddddd;
+  border: 2px solid #342E37;
+  -webkit-box-shadow: 5px 5px 5px #F48220;
+          box-shadow: 5px 5px 5px #F48220;
 }
 
-.indCat {
-  background: #2092F4;
+.indPet {
+  background: #F48220;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 8px #342E37;
+          box-shadow: 5px 5px 8px #342E37;
+}
+
+.indPet h5 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.indPet a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.indPet a:hover {
+  color: #342E37;
 }
 
 .adopt {
@@ -231,6 +267,8 @@ footer {
   width: 75%;
   margin: auto;
   margin-bottom: 80px;
+  -webkit-box-shadow: 7px 7px 10px #342E37;
+          box-shadow: 7px 7px 10px #342E37;
 }
 
 .carouselBtns {
