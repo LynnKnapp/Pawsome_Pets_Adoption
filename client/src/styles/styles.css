@@ -1,14 +1,68 @@
+@media only screen and (max-width: 600px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeMain {
+    padding: 10px;
+  }
+  .mission {
+    padding: 20px;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+  .blog {
+    width: 90%;
+  }
+  .blog img {
+    margin: auto;
+    display: block;
+  }
+  .blog h4 {
+    font-size: 30px;
+    left: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .homeMain {
+    padding: 5%;
+  }
+  .mission {
+    padding: 150px;
+    width: 70%;
+    margin-bottom: 300px;
+  }
+  .blog {
+    width: 80%;
+  }
+  .blog img {
+    float: left;
+  }
+  .blog h4 {
+    font-size: 60px;
+    left: 70px;
+  }
+}
+
 nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: #F48220;
   z-index: 3;
+  padding: 20px;
 }
 
 nav a {
@@ -33,9 +87,7 @@ nav div {
 }
 
 .homeMain {
-  padding: 5%;
   padding-top: 0;
-  padding-bottom: 50px;
 }
 
 .homeMain div {
@@ -43,7 +95,6 @@ nav div {
 }
 
 .blog {
-  width: 80%;
   margin: auto;
   padding-bottom: 150px;
   padding-top: 150px;
@@ -51,7 +102,6 @@ nav div {
 
 .blog img {
   width: 250px;
-  float: left;
   margin: 20px;
   margin-bottom: 10px;
   -webkit-box-shadow: 5px 5px 10px;
@@ -71,28 +121,19 @@ nav div {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 60px;
   font-style: italic;
-  left: 70px;
-  top: 40px;
+  top: 30px;
   color: #F48220;
   text-shadow: 5px 5px  10px grey;
 }
 
 .mission {
   font-size: 25px;
-  padding: 150px;
-  margin-bottom: 300px;
   margin: auto;
   line-height: 40px;
-  width: 70%;
   background: #F48220;
   border-radius: 20px;
   color: #dddddd;
-}
-
-.mission p {
-  padding-top: 30px;
 }
 
 .available div {
