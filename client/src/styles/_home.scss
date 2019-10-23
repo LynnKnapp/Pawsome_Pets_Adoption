@@ -20,6 +20,7 @@
         float: left;
         margin: 20px;
         margin-bottom: 10px;
+        box-shadow: 5px 5px 10px;
     }
     
     p {
@@ -37,7 +38,8 @@
         left: 70px;
         top: 40px;
         color: $accent;
-        text-decoration: underline;
+        // text-decoration: underline;
+        text-shadow: 5px 5px  10px grey;
     }
 }
 

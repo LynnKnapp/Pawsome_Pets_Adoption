@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 
 const Cat = (props) => {
     return (
-        <div className="indCat">
-            <h3>Name: {props.name}</h3>
+        <div className="indPet">
             <img src={props.image} alt='cat' />
+            <h3>Name: {props.name}</h3>
             <h5>Breed: {props.breed}</h5>
             <h5>Gender: {props.gender}</h5>
             <h5>Age: {props.age}</h5>

@@ -2,9 +2,12 @@
     div {
         img {
         width: 300px;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
         }
         div {
-            border: solid 4px gray;
+            // border: solid 4px $darkText;
             width: 400px;
             margin: 25px;
         }
@@ -13,13 +16,39 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    button {
+        padding: 15px;
+        // width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        display: block;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: $lightText;
+        border: 2px solid $darkText;
+        box-shadow: 5px 5px 5px $accent;
+    }
 }
 
-.indDog {
-    background: $compAccent;
-}
+.indPet {
+    background: $accent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px $darkText;
+    h5 {
+        text-align: center;
+        font-size: 15px;
+    }
 
-.indCat {
-    background: $compAccent;
+    a {
+        width: fit-content;
+        margin: auto;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: $lightText;
+    }
+
+    a:hover {
+        color: $darkText;
+    }
 }
