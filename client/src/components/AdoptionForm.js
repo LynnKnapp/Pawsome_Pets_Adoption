@@ -59,13 +59,13 @@ class AdoptionForm extends Component{
                 placeholder="Contact Number"/>
                 
             <select name='animalAdopting' value={this.state.animalAdopting} onChange={this.handleChange}>
-                <option placeholder="selectOne">Select pet to adopt</option>
+                <option placeholder="selectOne">Select Pet</option>
                 <option value="cat">Cat</option>
                 <option value="dog">Dog</option>
             </select> 
             
             <select name='contactTime' value={this.state.contactTime} onChange={this.handleChange}>
-                <option placeholder="Best time to contact">Best time to contact</option>
+                <option placeholder="Best time to contact">Best Time</option>
                 <option value="morning">Morning</option>
                 <option value="afternoon">Afternoon</option>
             </select>

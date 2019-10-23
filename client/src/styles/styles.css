@@ -50,6 +50,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  form {
+    margin: auto 10px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -91,6 +94,10 @@
   }
   .aboutPage div {
     padding: 50px;
+  }
+  form {
+    width: 400px;
+    margin: auto;
   }
 }
 
@@ -454,9 +461,6 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px;
-  width: 400px;
-  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 10px;

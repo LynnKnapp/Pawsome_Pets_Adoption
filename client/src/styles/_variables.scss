@@ -54,6 +54,10 @@ $lightText: rgb(221, 221, 221);
     footer {
         flex-direction: column;
     }
+
+    form {
+        margin: auto 10px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -100,5 +104,10 @@ $lightText: rgb(221, 221, 221);
         div {
             padding: 50px;
         }
+    }
+
+    form {
+        width: 400px;
+        margin: auto;
     }
 }
