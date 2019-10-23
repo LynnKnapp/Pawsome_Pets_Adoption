@@ -1,14 +1,13 @@
 .adopt {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 5%;
     padding-top: 10px;
 
     section {
-        width: 100%;
-        padding: 20px;
-        margin: 25px;
+        width: fit-content;
         border: 4px solid $darkText;
         box-shadow: 5px 5px 8px $darkText;
         border-radius: 8px;
@@ -22,16 +21,22 @@
     div {
         background: $lightText;
         border-radius: 10px;
-        padding: 10px;
-        margin: 20px;
         display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+
+        div {
+            width: 250px;
+        }
 
         img {
             height: 170px;
+            margin: auto;
         }
 
         p {
             color: $darkText;
+            width: 250px;
         }
     }
 }

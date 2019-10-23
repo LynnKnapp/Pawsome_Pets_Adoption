@@ -31,9 +31,10 @@
 }
 
 .indPet {
-    background: $accent;
     border-radius: 10px;
     box-shadow: 5px 5px 8px $darkText;
+    border: $accent 10px solid;
+
     h5 {
         text-align: center;
         font-size: 15px;

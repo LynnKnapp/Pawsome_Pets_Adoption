@@ -58,6 +58,18 @@ $lightText: rgb(221, 221, 221);
     form {
         margin: auto 10px;
     }
+
+    .adopt {
+        section {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div {
+            margin: 10px;
+            padding: 5px;
+        }
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -109,5 +121,16 @@ $lightText: rgb(221, 221, 221);
     form {
         width: 400px;
         margin: auto;
+    }
+
+    .adopt {
+        section {
+            padding: 20px;
+            margin: 25px;
+        }
+        div {
+            padding: 10px;
+            margin: 0px;
+        }
     }
 }
