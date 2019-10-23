@@ -53,6 +53,14 @@
   form {
     margin: auto 10px;
   }
+  .adopt section {
+    margin: 10px;
+    padding: 10px;
+  }
+  .adopt div {
+    margin: 10px;
+    padding: 5px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -98,6 +106,14 @@
   form {
     width: 400px;
     margin: auto;
+  }
+  .adopt section {
+    padding: 20px;
+    margin: 25px;
+  }
+  .adopt div {
+    padding: 10px;
+    margin: 0px;
   }
 }
 
@@ -234,10 +250,10 @@ nav div {
 }
 
 .indPet {
-  background: #F48220;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 8px #342E37;
           box-shadow: 5px 5px 8px #342E37;
+  border: #F48220 10px solid;
 }
 
 .indPet h5 {
@@ -268,6 +284,8 @@ nav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -276,9 +294,9 @@ nav div {
 }
 
 .adopt section {
-  width: 100%;
-  padding: 20px;
-  margin: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border: 4px solid #342E37;
   -webkit-box-shadow: 5px 5px 8px #342E37;
           box-shadow: 5px 5px 8px #342E37;
@@ -293,19 +311,28 @@ nav div {
 .adopt div {
   background: #dddddd;
   border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.adopt div div {
+  width: 250px;
 }
 
 .adopt div img {
   height: 170px;
+  margin: auto;
 }
 
 .adopt div p {
   color: #342E37;
+  width: 250px;
 }
 
 .aboutPage {
