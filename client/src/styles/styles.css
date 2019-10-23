@@ -8,6 +8,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .donateBtn {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+  }
   .homeMain {
     padding: 10px;
   }
@@ -27,6 +32,18 @@
     font-size: 30px;
     left: 10px;
   }
+  .aboutPage {
+    padding: 10px;
+  }
+  .aboutPage div {
+    padding: 20px;
+  }
+  .aboutPage ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -35,6 +52,15 @@
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .donate {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .donateBtn {
+    text-align: right;
+    font-size: 25px;
   }
   .homeMain {
     padding: 5%;
@@ -53,6 +79,12 @@
   .blog h4 {
     font-size: 60px;
     left: 70px;
+  }
+  .aboutPage {
+    padding: 5%;
+  }
+  .aboutPage div {
+    padding: 50px;
   }
 }
 
@@ -84,6 +116,21 @@ nav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.donateBtn {
+  background: #dddddd;
+  color: #342E37;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #342E37;
+          box-shadow: 2px 2px 5px #342E37;
 }
 
 .homeMain {
@@ -249,7 +296,6 @@ nav div {
 }
 
 .aboutPage {
-  padding: 5%;
   padding-top: 0;
   padding-bottom: 50px;
 }
@@ -259,7 +305,6 @@ nav div {
 }
 
 .aboutPage div {
-  padding: 50px;
   margin: 20px;
 }
 

@@ -12,7 +12,10 @@ const Nav = (props) => {
                 <Link to="/adopt">Recently Adopted</Link>
                 <Link to="/about">About Us</Link>
             </div>
-                <Link to="/donate">Donate</Link>
+
+            <div className="donate">
+                <Link to="/donate" className="donateBtn">Donate</Link>
+            </div>
         </nav>
     )
 }

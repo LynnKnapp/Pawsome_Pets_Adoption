@@ -9,6 +9,12 @@ $lightText: rgb(221, 221, 221);
         flex-direction: column;
     }
 
+    .donateBtn {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
     .homeMain {
         padding: 10px;
     }
@@ -32,12 +38,33 @@ $lightText: rgb(221, 221, 221);
             left: 10px;
         }
     }
+
+    .aboutPage {
+        padding: 10px;
+
+        div {
+            padding: 20px;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+    }
 }
 
 @media only screen and (min-width: 600px) {
     nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .donate {
+        justify-content: flex-end;
+    }
+
+    .donateBtn {
+        text-align: right;
+        font-size: 25px;
     }
 
     .homeMain {
@@ -60,6 +87,14 @@ $lightText: rgb(221, 221, 221);
         h4 {
             font-size: 60px;
             left: 70px;
+        }
+    }
+
+    .aboutPage {
+        padding: 5%;
+
+        div {
+            padding: 50px;
         }
     }
 }

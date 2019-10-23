@@ -21,3 +21,14 @@ nav {
         align-items: center;
     }
 }
+
+.donateBtn {
+    background: $lightText;
+    color: $darkText;
+    width: fit-content;
+    height: fit-content;
+    // font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $darkText;
+}
