@@ -1,12 +1,9 @@
 nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
     position: sticky;
     top: 0;
     background: $accent;
     z-index: 3;
-
+    padding: 20px;
 
     a {
         font-size: 20px;
