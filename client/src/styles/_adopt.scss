@@ -24,10 +24,7 @@
         display: flex;
         flex-wrap: wrap;
         width: fit-content;
-
-        div {
-            width: 250px;
-        }
+        margin-bottom: 15px;
 
         img {
             height: 170px;
@@ -37,6 +34,9 @@
         p {
             color: $darkText;
             width: 250px;
+            align-self: center;
+            font-size: 20px;
+            padding: 5px;
         }
     }
 }
