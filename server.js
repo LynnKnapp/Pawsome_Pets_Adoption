@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost: 27017/pawsomedb',
 
 app.use('/cats', require('./routes/catRoute.js')) 
 app.use('/dogs', require('./routes/dogRoute.js')) 
-
+app.use("/animals",require('./routes/searchRoute.js'))
 
 app.use((err,req,res,next)=>{
     console.log(err)
