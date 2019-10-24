@@ -9,8 +9,11 @@ import Footer from './Footer'
 import '../styles/styles.css'
 import AnimalDetails from './AnimalDetails'
 import DonateForm from './DonateForm'
+import Searchbar from './Searchbar.js'
 
 const App = () => {
+
+
     return (
         <main>
             <Nav />
@@ -19,6 +22,11 @@ const App = () => {
                 <Route path="/adoption">
                     <AnimalDetails/>
                 </Route> 
+                <Route path="/search">
+                    <Searchbar/>
+                </Route> 
+            
+
                 <Route path="/donate"><DonateForm /></Route>
                 <Route exact path="/">
                     <Home />

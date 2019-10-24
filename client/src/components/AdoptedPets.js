@@ -17,7 +17,7 @@ const AdoptedPets = () => {
                 </div>
                 <div>
                     <img src="https://images.unsplash.com/photo-1526363269865-60998e11d82d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Poodle and a Pair"/>
-                    <p>"Bianca the beautiful has made a seamless transition into our picturesque home, nestled quietly in the mountainside. She sits proudly while we enjoy our tea and crumpets."</p>
+                    <p>"Bianca the beautiful has made a seamless transition into our picturesque home, nestled quietly in the mountainside. She sits proudly while serverwe enjoy our tea and crumpets."</p>
                 </div>
             </section>
 
