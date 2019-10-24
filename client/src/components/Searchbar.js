@@ -8,10 +8,30 @@ class Searchbar extends Component{
         super(props)
         this.state={
             search: '',
-            searchResults: []
+            animals: [],
+            searchResults: [],
         }
     }
-
+    componentDidMount() { 
+          axios.get('/cats')
+          .then(res =>{
+            // console.log('res.data in search for cats',res.data)
+            this.setState(prevState => ({
+                animals: [...prevState.animals, ...res.data]
+            }))
+        })
+        .catch(err => console.log(err))
+        
+        axios.get('/dogs')
+        .then(res =>{
+            // console.log(res.data)
+            this.setState(prevState => ({
+                animals: [...prevState.animals, ...res.data]
+            }))
+        })
+        .catch(err => console.log(err))
+        
+    }
     
     handleChange=(e)=> {
         this.setState({
@@ -21,51 +41,32 @@ class Searchbar extends Component{
     }
     handleSubmit=(e) => {
         e.preventDefault()
-        axios.get(`/animals/search?breed=${this.state.search}`)
-            .then(res => {
-                this.setState({
-                    searchResults: res.data
-                })
-            }) 
-            .catch(err => console.log(err))
-
         // create a new array from this.state.animals filtering by breed.
-        // const filteredPets = this.state.animals.filter((pet) => {
-        //     console.log('pet:', pet)
-        //     //return true if the search matches an animal
-        //     //search - String
-        //     //animals - Array of objects
-        //     //animal object - name, breed, sex, age, color
-        //     //filtered results - Array of specific objects
-        //     return true
-        // })
-            // this.setState(prevState => {
-            //     return {
-            //         searchResults: {this.state.searchResults}
-            //     }
-            // }
-            // )   
+        const filteredPets = this.state.animals.filter((pet) => {
+            console.log('pet:', pet)
+            //return true if the search matches an animal
+            //search - String
+            //animals - Array of objects
+            //animal object - name, breed, sex, age, color
+            //filtered results - Array of specific objects
+            return true
+        })
+            this.setState(prevState => {
+                return {
+                    searchResults: filteredPets
+                }
+            }
+            )   
     }
 
     render(){
-         console.log(this.state.searchResults)
-         const mappedSearchResults = this.state.searchResults.map(result =>{
-           return  <div>
-                <h1>{result.name}</h1>
-                <img src={result.image} alt='pet' />
-                <h1>{result.breed}</h1>
-                <h1>{result.gender}</h1>
-                <h1>{result.age}</h1>
-             </div>
-         })
+        // console.log(this.state)
         return(
-            <div>
-                <h1>Search by Breed</h1>
+            <>
                 <form onSubmit = {this.handleSubmit}>
                 <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
                 </form>
-                {mappedSearchResults}
-            </div>
+            </>
         )
     }
 }
