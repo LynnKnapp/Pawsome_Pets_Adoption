@@ -7,7 +7,7 @@ const PORT =process.env.PORT || 6004
 app.use(express.json())
 app.use(morgan('dev'))
 
-mongoose.connect('mongodb://localhost: 27017/pawsomedb',
+mongoose.connect('mongodb://localhost:27017/pawsomedb',
     {
         useNewUrlParser: true,
         useFindAndModify: true,
