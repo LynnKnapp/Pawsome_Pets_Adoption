@@ -46,7 +46,7 @@ class Searchbar extends Component{
         return(
             <div>
                 <h1>Search by Breed</h1>
-                <form onSubmit = {this.handleSubmit}>
+              <form onSubmit = {this.handleSubmit}>
                 <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
                 </form>
 
