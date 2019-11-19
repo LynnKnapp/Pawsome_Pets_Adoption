@@ -69,7 +69,6 @@ class AdoptionForm extends Component{
                 <option value="morning">Morning</option>
                 <option value="afternoon">Afternoon</option>
             </select>
-
             <button>Submit</button>       
             </form> 
             </div>
