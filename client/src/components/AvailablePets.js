@@ -19,7 +19,7 @@ const changeView = () => {
 const AvailablePets = () => {
         return (
             <div className="available">
-                <button onClick={changeView}> Toggle Pet Type</button>
+                <button onClick={changeView}> Click for Cat/Dog</button>
                 <DogList />
                 <CatList />
             </div>
