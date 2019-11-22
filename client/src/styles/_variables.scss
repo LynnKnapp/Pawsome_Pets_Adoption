@@ -1,136 +1,145 @@
-$darkText: #342E37;
-$accent: #F48220;
-$compAccent: #2092F4;
-$lightText: rgb(221, 221, 221);
+// $darkText: #342E37;
+// $accent: #F48220;
+// $compAccent: #2092F4;
+// $lightText: rgb(221, 221, 221);
 
-@media only screen and (max-width: 600px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
+// @media screen and (max-width: 375px) {
+//     nav {
+//         background: #F48220;
+//         // display: flex;
+//         // flex-direction: column;
+//     }
+//     nav >h1{
+//         font-size: 9px !important;
 
-    .donateBtn {
-        text-align: center;
-        margin-top: 10px;
-        font-size: 15px;
-    }
+//     }
+//     nav >a{
+//         font-size: 9px;
+//         scroll-padding-right: 5px;
+//     }
 
-    .homeMain {
-        padding: 10px;
-    }
+//     .donateBtn {
+//         text-align: center;
+//         margin-top: 27px;
+//         font-size: 12px;
+//     }
 
-    .mission {
-        padding: 20px;
-        width: 90%;
-        margin-bottom: 100px;
-    }
+//     .homeMain {
+//         padding: 10px;
+//     }
 
-    .blog {
-        width: 90%;
+//     .mission {
+//         padding: 20px;
+//         width: 90%;
+//         margin-bottom: 100px;
+//     }
 
-        img {
-            margin: auto;
-            display: block;
-        }
+//     .blog {
+//         width: 90%;
 
-        h4 {
-            font-size: 30px;
-            left: 10px;
-        }
-    }
+//         img {
+//             margin: auto;
+//             display: block;
+//         }
 
-    .aboutPage {
-        padding: 10px;
+//         h4 {
+//             font-size: 30px;
+//             left: 10px;
+//         }
+//     }
 
-        div {
-            padding: 20px;
-        }
+//     .aboutPage {
+//         padding: 10px;
 
-        ul {
-            flex-direction: column;
-        }
-    }
+//         div {
+//             padding: 20px;
+//         }
 
-    footer {
-        flex-direction: column;
-    }
+//         ul {
+//             flex-direction: column;
+//         }
+//     }
 
-    form {
-        margin: auto 10px;
-    }
+//     footer {
+//         flex-direction: column;
+//     }
 
-    .adopt {
-        section {
-            margin: 10px;
-            padding: 10px;
-        }
+//     form {
+//         margin: auto 10px;
+//     }
 
-        div {
-            margin: 10px;
-            padding: 5px;
-        }
-    }
-}
+//     .adopt {
+//         section {
+//             margin: 10px;
+//             padding: 10px;
+//         }
 
-@media only screen and (min-width: 600px) {
-    nav {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+//         div {
+//             margin: 10px;
+//             padding: 5px;
+//         }
+//     }
+// }
 
-    .donate {
-        justify-content: flex-end;
-    }
+// @media only screen and (min-width: 600px) {
+//     nav {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//     }
 
-    .donateBtn {
-        text-align: right;
-        font-size: 25px;
-    }
+    // .donate {
+    //     justify-content: flex-end;
+    // }
 
-    .homeMain {
-        padding: 5%;
-    }
+    // .donateBtn {
+    //     text-align: right;
+    //     font-size: 25px;
+    // }
 
-    .mission {
-        padding: 150px;
-        width: 70%;
-        margin-bottom: 300px;
-    }
+    // .homeMain {
+    //     padding: 5%;
+    // }
 
-    .blog {
-        width: 80%;
+    // .mission {
+    //     padding: 150px;
+    //     width: 70%;
+    //     margin-bottom: 300px;
+    // }
 
-        img {
-            float: left;
-        }
+    // .blog {
+    //     width: 80%;
 
-        h4 {
-            font-size: 60px;
-            left: 70px;
-        }
-    }
+    //     img {
+    //         float: left;
+    //     }
 
-    .aboutPage {
-        padding: 5%;
+    //     h4 {
+    //         font-size: 60px;
+    //         left: 70px;
+    //     }
+    // }
 
-        div {
-            padding: 50px;
-        }
-    }
+    // .aboutPage {
+    //     padding: 5%;
 
-    form {
-        width: 400px;
-        margin: auto;
-    }
+    //     div {
+    //         padding: 50px;
+    //     }
+    // }
 
-    .adopt {
-        section {
-            padding: 20px;
-            margin: 25px;
-        }
-        div {
-            padding: 10px;
-            margin: 0px;
-        }
-    }
+    // form {
+    //     width: 400px;
+    //     margin: auto;
+    // }
+
+    // .adopt {
+    //     section {
+    //         padding: 20px;
+    //         margin: 25px;
+    //     }
+    //     div {
+    //         padding: 10px;
+    //         margin: 0px;
+    //     }
+    // }
 }

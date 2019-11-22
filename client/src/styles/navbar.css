@@ -1,0 +1,39 @@
+.navbar{
+    background-color: #F48220;
+    color: #rgb(221, 221, 221);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 12px;
+    }
+    a >h1{
+        font-size: 15px;
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 4px;
+    }
+    .donate{
+        padding-top: 7px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+    
+    .carouselBtns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    
+    
+}

@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
-@media only screen and (max-width: 600px) {
+/* @import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+ @media only screen and (max-width: 600px) {
   nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: space-evenly;
+    background-color: #F48220;
+    
+  }
+  nav >a{
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-content: space-around;
+    font-size: 15px;
   }
   .donateBtn {
     text-align: center;
@@ -17,8 +20,8 @@
   .homeMain {
     padding: 10px;
   }
-  .mission {
-    padding: 20px;
+  .mission { */
+    /* padding: 20px;
     width: 90%;
     margin-bottom: 100px;
   }
@@ -66,19 +69,17 @@
 
 @media only screen and (min-width: 600px) {
   nav {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
+    /* display: flex;
+    flex-direction: row; */
+  /* }
   .donate {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
   }
   .donateBtn {
     text-align: right;
-    font-size: 25px;
+    font-size: 20px;
   }
   .homeMain {
     padding: 5%;
@@ -87,10 +88,10 @@
     padding: 150px;
     width: 70%;
     margin-bottom: 300px;
-  }
-  .blog {
-    width: 80%;
-  }
+  } */
+  /* .blog {
+    width: 80%; 
+  } 
   .blog img {
     float: left;
   }
@@ -116,9 +117,9 @@
     padding: 10px;
     margin: 0px;
   }
-}
+} */
 
-nav {
+ /* nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -127,10 +128,10 @@ nav {
   padding: 20px;
   -webkit-box-shadow: 0px 2px 10px #342E37;
           box-shadow: 0px 2px 10px #342E37;
-}
+} 
 
 nav a {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   color: #dddddd;
 }
@@ -148,9 +149,9 @@ nav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
+}  */
 
-.active {
+/* .active {
   color: #342E37;
 }
 
@@ -181,9 +182,9 @@ nav div {
   margin: auto;
   padding-bottom: 150px;
   padding-top: 150px;
-}
+} */
 
-.blog img {
+/* .blog img {
   width: 250px;
   margin: 20px;
   margin-bottom: 10px;
@@ -217,9 +218,9 @@ nav div {
   background: #F48220;
   border-radius: 20px;
   color: #dddddd;
-}
+} */
 
-.available div {
+/* .available div {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -281,9 +282,9 @@ nav div {
   display: block;
   padding: 10px;
   color: #F48220;
-}
+} */
 
-.indPet a:hover {
+/* .indPet a:hover {
   color: #342E37;
   cursor: pointer;
 }
@@ -303,9 +304,9 @@ nav div {
           justify-content: space-evenly;
   padding: 5%;
   padding-top: 10px;
-}
+} */
 
-.adopt section {
+/* .adopt section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -347,9 +348,9 @@ nav div {
       align-self: center;
   font-size: 20px;
   padding: 5px;
-}
+} */
 
-.aboutPage {
+/* .aboutPage {
   padding-top: 0;
   padding-bottom: 50px;
 }
@@ -368,9 +369,9 @@ nav div {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
+} */
 
-.aboutPage li {
+/* .aboutPage li {
   font-size: 20px;
   padding: 5px;
   list-style-type: circle;
@@ -388,9 +389,9 @@ nav div {
   -webkit-box-shadow: 5px 5px 5px #342E37;
           box-shadow: 5px 5px 5px #342E37;
   border-radius: 8px;
-}
+} */
 
-.ourNeeds {
+/* .ourNeeds {
   border: 2px solid #342E37;
   -webkit-box-shadow: 5px 5px 5px #342E37;
           box-shadow: 5px 5px 5px #342E37;
@@ -421,9 +422,9 @@ footer h1 {
 footer p {
   text-align: center;
   padding: 5px;
-}
+} */
 
-.carousel {
+/* .carousel {
   width: 75%;
   margin: auto;
   margin-bottom: 80px;
@@ -444,9 +445,9 @@ footer p {
   border: none;
   margin: 25px;
   background: #dddddd;
-}
+} */
 
-.fa {
+/* .fa {
   font-size: 30px;
 }
 
@@ -520,9 +521,9 @@ form button {
   margin: 50px 10px 30px 10px;
   color: #342E37;
   font-size: 20px;
-}
+} */
 
-input {
+/* input {
   font-size: 20px;
   margin: 5px;
   color: #342E37;
@@ -544,5 +545,5 @@ label {
   text-align: center;
   margin-top: 20px;
   text-shadow: 1px 1px 5px #342E37;
-}
-/*# sourceMappingURL=styles.css.map */
+}  */ 
+ /* sourceMappingURL=styles.css.map   */
