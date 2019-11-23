@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.7.5",
-    "morgan": "^1.9.1"
+    "mongoose": "^5.7.12",
+    "morgan": "^1.9.1",
+    "react-router-dom": "^5.1.2"
   },
   "engines": {
     "node": "8.9.2"

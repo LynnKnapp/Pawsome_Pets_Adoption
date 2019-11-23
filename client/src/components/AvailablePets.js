@@ -1,30 +1,46 @@
-import React from 'react'
+import React, {Component} from 'react'
 import DogList from './DogList'
 import CatList from './CatList'
+import '../styles/availablePet.css'
 
 
+class AvailablePets extends Component {
+    constructor(){
+        super()
+        this.state={
+            changePet: false
+        }
+    }
 
-const changeView = () => {
+    
 
-    const catList = document.getElementById('catList')
-    const dogList = document.getElementById('dogList')
-
-    catList.classList.toggle('hidden')
-    catList.classList.toggle('notHidden')
-
-    dogList.classList.toggle('hidden')
-    dogList.classList.toggle('notHidden')
-}
-
-const AvailablePets = () => {
+    togglePet = () => {
+        console.log(this.changePet)
+        this.setState(prevState =>({
+            changePet: !prevState.changePet
+        })) 
+    }
+    render(){
+        console.log(this.changePet)
         return (
             <div className="available">
-                <button onClick={changeView}> Click for Cat/Dog</button>
-                <DogList />
-                <CatList />
+                <button onClick={this.togglePet}> Click for Cat/Dog</button>
+                { !this.state.changePet ?
+                <>
+                    <div>  
+                        <DogList />
+                    </div>
+                </>  
+                :
+                <>
+                    <div>       
+                        <CatList />
+                    </div>
+                </> 
+                }      
             </div>
         )
     }
-
+}
     
 export default AvailablePets

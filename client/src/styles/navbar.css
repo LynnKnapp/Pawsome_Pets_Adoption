@@ -1,6 +1,20 @@
 .navbar{
     background-color: #F48220;
-    color: #rgb(221, 221, 221);
+    color: ghostwhite;
+    
+}
+
+.links >a{
+    color: ghostwhite;
+    text-decoration: none;
+}
+a > h1{
+    color: ghostwhite;
+    text-decoration: none;
+}
+.donateBtn{
+    color: ghostwhite;
+    text-decoration: none;
 }
 
 

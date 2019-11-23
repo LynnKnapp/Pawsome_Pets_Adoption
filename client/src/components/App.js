@@ -13,7 +13,7 @@ import Searchbar from './Searchbar.js'
 
 const App = () => {
     return (
-        <main>
+        <div className = "main-container">
             <Nav />
 
             <Switch>
@@ -42,7 +42,7 @@ const App = () => {
             </Switch>
 
             <Footer />
-        </main>
+        </div>
     )
 }
 
