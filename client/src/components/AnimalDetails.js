@@ -17,7 +17,7 @@ const AnimalDetails = (props) => {
     
     // console.log(props.location.state.catArray.indexOf(props.location.state.animalId))
     return (
-        <div>
+        <div className='adoptMe'>
             <h2>Please fill out this form if you are interested in adopting {currentAnimal.name}.</h2>  
             <AdoptionForm />    
         </div>

@@ -10,9 +10,10 @@ const Footer = () => {
             </div>
 
             <div className= 'hours'>
-                <h1>Life Saving Center Hours</h1>
-                <p>Mon-Sat 11am-6pm</p>
-                <p>Sunday 12pm-4pm</p>
+                <h1>Life Saving Hours</h1>
+                <p>Monday - Friday 11am-6pm</p>
+                <p>Saturday 12pm-4pm</p>
+                <p>Sunday closed</p>
             </div>
         </footer>
     )

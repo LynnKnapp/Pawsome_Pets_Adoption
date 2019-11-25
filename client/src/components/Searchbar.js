@@ -1,4 +1,5 @@
 import React,{Component,} from 'react'
+import '../styles/styles1.css'
 import axios from 'axios';
 
 
@@ -44,14 +45,16 @@ class Searchbar extends Component{
              </div>
          })
         return(
-            <div>
+            <div className='searchBar'>
                 <h1>Search by Breed</h1>
-              <form onSubmit = {this.handleSubmit}>
-                <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
+            
+                <form onSubmit = {this.handleSubmit}>
+                    <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
                 </form>
-
-                <div className="available">
-                    {mappedSearchResults}
+                <div className='searchPet'>
+                    <div className="available">
+                        {mappedSearchResults}
+                    </div>
                 </div>
                 
             </div>

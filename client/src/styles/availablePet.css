@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 600px){
+/* @media screen and (min-width: 320px) and (max-width: 600px){
     .indPet{
         border: solid 10px #F48220;
         border-radius: 10px;
@@ -6,8 +6,8 @@
         margin-top: 10px;
     }
     .indPet > img{
-        height: 326px;
-        width: 326px;
+        height: 310px;
+        width: 100%;
     }
     .available > button{
         margin-left: 110px;
@@ -33,4 +33,4 @@
         margin: 0px;
     }
     
-}    
+}     */

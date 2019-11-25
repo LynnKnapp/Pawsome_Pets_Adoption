@@ -35,9 +35,9 @@ class CatList extends Component {
                 />
         })
         return (
-            <div id="catList" className="hidden">
+            <>
                 {mappedCats}
-            </div>
+            </>
         )
     }
 }

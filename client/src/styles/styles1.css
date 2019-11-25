@@ -1,0 +1,882 @@
+body{
+    background-color: ghostwhite;
+    margin: 0px;
+    padding: 0px
+}
+.homeMain{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #F48220;
+    color: ghostwhite;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+}
+.links >a{
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+.active >h1{
+    text-decoration: none;
+}
+a > h1{
+    color: ghostwhite;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+}
+.donate{
+    padding-top: 7px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+.donateBtn{
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.submitBtn{
+    display: flex;
+    text-align: center;
+    align-self: center;
+    border: solid 4px #F48220;
+    border-radius: 8%;
+    background-color: ghostwhite;
+    margin-bottom: 6px;
+}
+
+.homeMain >h2{
+    font-size: 60px;
+    text-align: center;
+}
+.carousel {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 80px;
+    border: solid 4px black;
+    box-shadow: 7px 7px 10px #342E;
+}
+.carouselBtns {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.carouselBtns > button{
+    border: none;
+        margin: 25px;
+        background-color: ghostwhite;
+        border: solid 6px black;
+} 
+.mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+}
+.mission > p{
+    border: solid 10px #F48220;
+    font-size: 30px;
+    padding: 20px 30px;
+    border-radius: 1%;
+    width: 54%;
+    text-align: justify;
+    box-shadow: 5px 5px 10px;
+}
+.succesStory >h4 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0px;
+    margin-top: 10px;
+}
+.succesStory>h2 {
+    margin-top: -33px;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+} 
+.image{
+    border: solid 10px #F48220;
+    box-shadow: 5px 5px 10px;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+.image-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image > img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    
+}
+.testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.testimony >p{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    /* padding: 10px 20px; */
+    font-size: 24px;
+    
+}
+.testimony > h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    text-align: center;
+}
+footer{
+    background-color: #F48220;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;  
+    width: 99%;
+    border: solid 5px #F48220;
+    color: ghostwhite;
+}
+.address{
+    width: 300px;
+
+}
+.address >h1{
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: -6px;
+    text-align: center;
+
+
+}
+.address >p{
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.hours{
+    /* margin-left: 40px; */
+    width: 300px;
+}
+.hours >h1{
+    text-align: center;
+    font-size: 24px;
+    margin-top: -7px;
+    margin-bottom: 0px;
+}
+.hours >p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.indPet{
+    border-radius: 10px;
+    border: solid 10px #F48220;
+    width: 350px;
+    box-shadow: 5px 5px 8px ;
+    margin: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+.indPet > h3{
+    font-size: 28px;
+    text-align: center;
+    margin-top: -1px;
+    margin-bottom: 5px;
+}
+.indPet > h5{
+    font-size: 18px;
+    padding-left: 7px;
+    text-align: center;
+    padding-bottom: 1px;
+    margin: 0px;
+}
+.indPet > img{
+    height: 350px;
+    width: 350px;
+}
+.petInfo >h3{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.petInfo >h5{
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 7px;
+}
+.pet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    /* how does that look? */ 
+    
+    
+}
+.available{
+    display: flex;
+    flex-direction: column;    
+}
+.pet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.available{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.available > button{
+    
+    margin: 0;
+    border: solid 8px #F48220; 
+    background-color: ghostwhite;
+    width: 200px;
+    height: 18px;
+    text-align: center;
+
+    display: block;
+    font-size: 17px;
+    border-radius: 10px;
+    padding-bottom: 48px;        
+    
+} 
+.searchBar{
+    border: solid 15px #F48220;
+
+}
+.searchBar > h1{
+    font-size: 26px;
+    text-align: center;
+}
+.searchPet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F48220; 
+    width: 50%;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    padding-top: 20px; 
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+.form > form{
+    width: 60%
+}
+form > input[type=text]{
+    height: 20px;
+    width: 100%;    
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin: -3px;
+    text-align: center;
+
+}
+form > input[type=email]{
+    height: 20px;
+    width: 100%;    
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin-bottom: 0px;
+    text-align: center
+
+}
+form > input[type=tel]{
+    height: 20px;
+    width: 100%;
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.adoptedPets >h2{
+    font-size: 40px;
+    text-align: center;
+}
+.adoptDog > h3{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.adopt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adopt-image{
+    border: solid 15px #F48220;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 1%;
+    width: 70%;
+}
+.adopt-image > img{
+    width: 100%;
+    box-shadow: 5px 5px 5px;
+
+}
+.adopt-image > p{
+    text-align: justify;
+    padding:  6px 20px;
+    font-size: 20px;
+    
+}
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+}
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutPage-container > h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.whoWeAre{
+    width: 60%;
+    border: solid 10px #F48220;
+    box-shadow: 5px 5px 8px ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+.whoWeAre > h3{
+    text-align: center;
+    font-size: 27px;
+}
+.whoWeAre > p{
+    text-align: justify;
+    font-size: 19px;
+    padding: 19px;
+}
+.ourServices{
+    width: 60%;
+    border: solid 10px #F48220;
+    box-shadow: 5px 5px 8px ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.ourServices > h3{
+    text-align: center;
+    font-size: 27px;
+}
+.ourServices > ul{
+    text-align: left;
+    font-size: 19px;
+}
+.ourNeeds{
+    width: 60%;
+    border: solid 10px #F48220;
+    box-shadow: 5px 5px 8px ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.ourNeeds >h3{
+    text-align: center;
+    font-size: 25px;
+}
+.ourNeeds > h5{
+    font-size: 18px;
+    text-align: center;
+}
+.ourNeeds > ul{
+    text-align: left;
+    font-size: 19px;
+}
+.form-container >h3{
+    font-size: 22px;
+    text-align: center;
+}
+form{
+
+    margin:  0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-self: center;
+    align-self: center; */
+    width: 30%;
+    text-align: center;
+}
+form > input[type=text]{
+    height: 30px;
+    width: 100%;    
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin-bottom: 30px;
+
+}
+form > input[type=tel]{
+    height: 30px;
+    width: 100%;
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin-bottom: 10px;
+}
+.adoptMe > a{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite ;
+    font-size: 22px;
+    font-weight: bold;
+    
+    background-color: #F48220;
+}
+.contact-form{
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 380px;
+    text-align: center;
+    background-color: #F48220;
+    border-radius: 4%;
+}
+.contact-form > input[type=text]{
+    height: 40px;
+    width: 80%;    
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    margin-bottom: 0px;   
+}
+.contact-form > input[type=tel]{
+    height: 40px;
+    width: 80%;
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin-bottom: 10px;
+}
+.contact-form > input[type=email]{
+    height: 40px;
+    width: 80%;
+    border: solid 6px #F48220;
+    border-radius: 5%;
+    /* margin-left: 115px;  */
+    margin-bottom: 10px;
+}
+.adoptMe > h2{
+    text-align: center;
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 600px){
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+    }
+    .active > h1{
+        font-size: 25px;
+    }
+    .links >a{
+        font-size: 15px;
+    }
+    a >h1{
+        font-size: 18px;
+        /* text-align: center; */
+        padding-left: 10px;
+        padding-top: 4px; 
+    }
+    .donate{
+        padding-top: 7px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+    
+    .carouselBtns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    } 
+    .homeMain >h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .carouselBtns > button{
+        border: none;
+            margin: 10px;
+            background-color: ghostwhite;
+            border: none;
+    }  
+    .mission{
+        width: 100%px;   
+    }
+    .mission >p{
+        border-radius: 4%;
+        margin-top: 15px;
+        padding: 15px;
+        text-align: justify;
+        width: 100%;
+        font-size: 22px;   
+    }
+    .succesStory >h4 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .succesStory>h2 {
+        margin-top: -33px;
+        font-size: 21px;
+        text-align: center;
+        font-style: italic;
+    }
+    .image{
+        border: solid 6px #F48220;
+        border-radius: 2%; 
+        width: 100%;
+    }
+    .image > img{
+        width: 100%;
+        height: 50vh;
+    }
+    .image >p{
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .image > h3{
+        font-size: 11px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+    footer{
+        background-color: #F48220;
+        display: flex;
+        height: 90px;  
+        width: 100%px;
+        border: solid 6px #F48220;
+    }
+    
+    .address >h1{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .address >p{
+        font-size: 12px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+    .hours{
+        margin-left: 40px;
+    }
+    .hours >h1{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .hours >p{
+        text-align: center;
+        font-size: 12px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+    .indPet{
+        border: solid 10px #F48220;
+      
+        box-shadow: 5px 5px 8px ;
+        margin-top: 10px;
+    }
+    .indPet > h3{
+        font-size: 28px;
+        text-align: center;
+        margin-top: -1px;
+        margin-bottom: 5px;
+    }
+    .indPet > h5{
+        font-size: 18px;
+        padding-left: 7px;
+        text-align: center;
+        padding-bottom: 1px;
+        margin: 0px;
+    }
+    .indPet > img{
+        height: 310px;
+        width: 100%;
+    }
+    .available{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .available > button{
+        margin: 0;
+        padding-top: 30px;
+        border: solid 8px #F48220;
+        border-radius: 10px;
+        background-color: ghostwhite;
+        font-size: 24px;
+        width: 150px;
+        height: 10px;
+        text-align: center;
+    }
+    .petInfo{
+        padding-left: 5px;
+    }
+    .petInfo >h3{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .petInfo >h5{
+        font-size: 18px;
+        margin: 0px;
+        padding-bottom: 7px;
+    }
+    .adoptMe{
+        background-color: #F48220;
+    }
+    .adoptMe > a{
+        display: flex;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: ghostwhite;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    footer{
+        margin-top: 6px;
+    }
+    .adoptedPets >h2{
+        font-size: 23px;
+        text-align: center;
+    }
+    .adoptDog > h3{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .adopt{
+       
+        display: flex;
+        flex-direction: column;
+    }
+    .adopt-image > img{
+        width: 100%;
+    }
+    .adopt-image > p{
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .searchBar{
+        border: solid 15px #F48220;
+    
+    }
+    .searchBar > h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .donate > a{
+        font-size: 25px;
+    }
+    form{
+
+        margin:  auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-self: center;
+        align-self: center; */
+        width: fit-content;
+        text-align: center;
+    }
+    form > input[type=text]{
+        height: 30px;
+        width: 100%;    
+        border: solid 6px #F48220;
+        border-radius: 5%;
+        /* margin-left: 115px;  */
+        margin-bottom: 30px;
+    
+    }
+    form > input[type=tel]{
+        height: 30px;
+        width: 100%;
+        border: solid 6px #F48220;
+        border-radius: 5%;
+        /* margin-left: 115px;  */
+        margin-bottom: 10px;
+
+    
+    }
+    .form{
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F48220; 
+    width: 100%;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    padding-top: 20px; 
+    font-size: 19px;
+    font-weight: 500;
+    
+    }
+    .form-container > h3{
+        font-size: 18px;
+    }
+        .form > form{
+        width: 60%
+    }
+    form > input[type=text]{
+        height: 20px;
+        width: 100%;    
+        border: solid 6px #F48220;
+        border-radius: 5%;
+        /* margin-left: 115px;  */
+        margin: -3px;
+        text-align: center;
+
+    }
+    form > input[type=email]{
+        height: 20px;
+        width: 100%;    
+        border: solid 6px #F48220;
+        border-radius: 5%;
+        /* margin-left: 115px;  */
+        margin-bottom: 0px;
+        text-align: center
+
+    }   
+    form > input[type=tel]{
+        height: 20px;
+        width: 100%;
+        border: solid 6px #F48220;
+        border-radius: 5%;
+        /* margin-left: 115px;  */
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .aboutPage > h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .whoWeAre{
+        border: solid 5px #F48220;
+        box-shadow: 5px 5px 8px ;
+        border-radius: 8px;
+    }
+    .whoWeAre > h3{
+        text-align: center;
+        
+    }
+    .ourServices{
+        border: solid 5px #F48220;
+        box-shadow: 5px 5px 8px ;
+        border-radius: 8px;
+    }
+    .ourServices > h3{
+        text-align: center;
+    }
+    .ourNeeds{
+        border: solid 5px #F48220;
+        box-shadow: 5px 5px 8px ;
+        border-radius: 8px;
+    }
+    .ourNeeds > h3, h5{
+        text-align: center;
+    }
+    
+
+} 
+@media screen and (min-width: 601px) and (max-width: 968px){ 
+    .available > button{
+        margin: 0;
+        border: solid 8px #F48220;
+        border-radius: 10px;
+        background-color: ghostwhite;
+        font-size: 19px;
+        width: 150px;
+        height: 10px;
+        text-align: center;
+        }
+}       

@@ -23,16 +23,15 @@ class AdoptionForm extends Component{
         const submits = `
             name: ${this.state.name},
             emailaddress: ${this.state.emailaddress},
-            phone: ${this.state.phone},
-            contactTime: ${this.state.contactTime},
-            animal: ${this.state.animalAdopting}
+            phone: ${this.state.phone}
+            
         `
         alert(submits)
     }
     render(){
         return(
-            <div>
-              <form onSubmit={this.handleSubmit}>
+            <div className='contact-form-container'>
+              <form className= 'contact-form' onSubmit={this.handleSubmit}>
 
                 <label>Full Name</label>
                 <input
@@ -57,18 +56,6 @@ class AdoptionForm extends Component{
                 value={this.state.phone}
                 onChange={this.handleChange}
                 placeholder="Contact Number"/>
-                
-            <select name='animalAdopting' value={this.state.animalAdopting} onChange={this.handleChange}>
-                <option placeholder="selectOne">Select Pet</option>
-                <option value="cat">Cat</option>
-                <option value="dog">Dog</option>
-            </select> 
-            
-            <select name='contactTime' value={this.state.contactTime} onChange={this.handleChange}>
-                <option placeholder="Best time to contact">Best Time</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-            </select>
             <button>Submit</button>       
             </form> 
             </div>

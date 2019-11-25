@@ -30,9 +30,9 @@ class DogList extends Component {
             return <Dog dogArray={this.state.dogs} {...dog} key={dog._id} />;
         });
         return (
-            <div id="dogList" className="notHidden">
+            <>
                 {mappedDogs}
-            </div>
+            </>
         );
     }
 }

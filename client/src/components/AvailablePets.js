@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import DogList from './DogList'
 import CatList from './CatList'
-import '../styles/availablePet.css'
+
 
 
 class AvailablePets extends Component {
@@ -25,19 +25,23 @@ class AvailablePets extends Component {
         return (
             <div className="available">
                 <button onClick={this.togglePet}> Click for Cat/Dog</button>
-                { !this.state.changePet ?
-                <>
-                    <div>  
-                        <DogList />
-                    </div>
-                </>  
-                :
-                <>
-                    <div>       
-                        <CatList />
-                    </div>
-                </> 
-                }      
+                <div className='pet-container'>
+                    <div className='pet'>
+                        { !this.state.changePet ?
+                        <>
+                            
+                                <DogList />
+                            
+                        </>  
+                        :
+                        <>
+                            
+                                <CatList />
+                        
+                        </> 
+                        } 
+                    </div>    
+                </div>     
             </div>
         )
     }
