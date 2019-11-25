@@ -1,22 +1,8 @@
 {
-  "name": "pawsome_pets_adoption",
+  "name": "pawesome_pets_adoption",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LynnKnapp/Pawsome_Pets_Adoption.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption/issues"
-  },
-  "homepage": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption#readme",
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
@@ -26,7 +12,20 @@
     "react-router-dom": "^5.1.2",
     "uuid": "^3.3.3"
   },
-  "engines": {
-    "node": "8.9.2"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LynnKnapp/Pawsome_Pets_Adoption.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption/issues"
+  },
+  "homepage": "https://github.com/LynnKnapp/Pawsome_Pets_Adoption#readme"
 }
