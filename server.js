@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 //for heroku
 app.use(express.static(path.join(__dirname, "client", "build")))
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/my-app-name",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/pawsomedb",
 {
     useNewUrlParser: true,
     useFindAndModify: false,
