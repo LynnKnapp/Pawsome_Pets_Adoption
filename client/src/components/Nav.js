@@ -8,7 +8,7 @@ const Nav = (props) => {
     return (
         <div className='navbar'> 
             <div className='header'>  
-                <Link className={props.location.pathname === "/" ? "active" : ""} to="/"><h1>P<i className="fas fa-paw fa-xs"></i>WESOME PETS</h1></Link>
+                <Link className='header-link' to="/"><h1>PAWESOME PETS</h1></Link>
             </div>
             <div className='links'>
                 <Link className={props.location.pathname === "/available" ? "active" : ""} to="/available">Available Pets</Link>
