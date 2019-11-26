@@ -12,15 +12,6 @@ app.use(morgan('dev'))
 //for heroku
 app.use(express.static(path.join(__dirname, "client", "build")))
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/pawsomedb",
-// {
-//     useNewUrlParser: true,
-//     useFindAndModify: false,
-//     useCreateIndex: true
-// })
-// .then( () => console.log("Fetching ingredients from storage"))
-// .catch( err => console.log(err));
-
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/pawsomedb',
     {
         useNewUrlParser: true,
