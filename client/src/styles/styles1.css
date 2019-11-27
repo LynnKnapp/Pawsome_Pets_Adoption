@@ -367,7 +367,8 @@ form > input[type=tel]{
     align-items: center;
     margin-top: 5px;
     border-radius: 1%;
-    width: 70%;
+    width: 55%;
+    margin-bottom: 6px;
 }
 .adopt-image > img{
     width: 100%;
@@ -592,7 +593,14 @@ form > input[type=tel]{
         padding: 15px;
         text-align: justify;
         width: 100%;
-        font-size: 22px;   
+        font-size: 17px;  
+        border: #F48220 5px solid; 
+    }
+    .homeMain{
+        padding: 9px;
+    }
+    .testimony >p{
+        font-size: 15px;
     }
     .succesStory >h4 {
         font-size: 24px;
@@ -607,7 +615,7 @@ form > input[type=tel]{
         font-style: italic;
     }
     .image{
-        border: solid 6px #F48220;
+        border: solid 5px #F48220;
         border-radius: 2%; 
         width: 100%;
     }
@@ -739,6 +747,10 @@ form > input[type=tel]{
         display: flex;
         flex-direction: column;
     }
+    .adopt-image{
+        width: 92%;
+        border: #F48220 solid 8px;
+    }
     .adopt-image > img{
         width: 100%;
     }
@@ -746,6 +758,7 @@ form > input[type=tel]{
         text-align: justify;
         padding-left: 10px;
         padding-right: 10px;
+        
     }
     .searchBar{
         border: solid 15px #F48220;
@@ -847,6 +860,7 @@ form > input[type=tel]{
         border: solid 5px #F48220;
         box-shadow: 5px 5px 8px ;
         border-radius: 8px;
+        width: 95%;
     }
     .whoWeAre > h3{
         text-align: center;
@@ -856,6 +870,7 @@ form > input[type=tel]{
         border: solid 5px #F48220;
         box-shadow: 5px 5px 8px ;
         border-radius: 8px;
+        width: 95%;
     }
     .ourServices > h3{
         text-align: center;
@@ -864,6 +879,7 @@ form > input[type=tel]{
         border: solid 5px #F48220;
         box-shadow: 5px 5px 8px ;
         border-radius: 8px;
+        width: 95%;
     }
     .ourNeeds > h3, h5{
         text-align: center;
