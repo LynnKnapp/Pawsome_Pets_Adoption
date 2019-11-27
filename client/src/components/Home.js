@@ -14,7 +14,7 @@ const Home = () => {
             </div>
             <div className= 'image-container'>
                 <div className='image'>
-                    <img src="https://images.unsplash.com/photo-1556935382-a3f3a86d5c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="Claire, her daughter, and her cat, Vanilla"/>
+                    <img src='https://www.petfirst.com/wp-content/uploads/2017/08/Kids-and-Pets.jpg' alt="claire and her dog"/>
                     <div className='testimony'>
                         <p>For years, my daughter had been for a pet, but our apartment was too small. Once we moved into our first home, we took the plunge and contacted Pawesome Pets. We found our little sweetheart while looking online.  Now we are all happy and delighted to be together.  Our world is now complete.</p>
                     <h3>-Claire Ebbers & Vanilla</h3>

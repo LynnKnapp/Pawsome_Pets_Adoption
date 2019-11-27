@@ -17,7 +17,7 @@ const Nav = (props) => {
                 <Link className={props.location.pathname === "/about" ? "active" : ""} to="/about">About Us </Link>
             </div> 
             <div className='donate'>
-                <Link to="/donate" className="donateBtn">Donate</Link> 
+                <Link to="/donate" className="donateBtn">Donate Here</Link> 
             </div>
         </div>
     )
