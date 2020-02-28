@@ -47,16 +47,16 @@ class Searchbar extends Component{
         return(
             <div className='searchBar'>
                 <h1>Search by Breed</h1>
-            
-                <form onSubmit = {this.handleSubmit}>
-                    <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
-                </form>
+                <div className='form-container'>
+                    <form onSubmit = {this.handleSubmit}>
+                        <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
+                    </form>
+                </div>
                 <div className='searchPet'>
                     <div className="available">
                         {mappedSearchResults}
                     </div>
-                </div>
-                
+                </div>   
             </div>
         )
     }
