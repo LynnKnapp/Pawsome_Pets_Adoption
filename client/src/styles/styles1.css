@@ -1,3 +1,9 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
 body{
     background-color: ghostwhite;
     margin: 0px;
@@ -6,16 +12,19 @@ body{
 .homeMain{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .main-container{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .navbar{
     background-color: #F48220;
     color: ghostwhite;
+    margin: 0;
     margin-bottom: 20px;
-    width: 100%;
+    width: 100vw;
     
 }
 .links{
@@ -32,7 +41,7 @@ body{
 
 }
 .links >a:hover{
-    font-size: 26px;
+    font-size: 23px;
     color: black;
 }
 .active >h1{
@@ -68,14 +77,18 @@ a >h1:hover{
     display: flex;
     text-align: center;
     align-self: center;
-    border: solid 4px #F48220;
+    border: 1px grey;
     border-radius: 8%;
     background-color: ghostwhite;
     margin-bottom: 6px;
+    width: 10vw;
+    font-size: 14px;
+    padding-left: 40px;
+    height: 20px;
 }
 
 .homeMain >h2{
-    font-size: 60px;
+    font-size: 57px;
     text-align: center;
 }
 .carousel {
@@ -115,7 +128,8 @@ a >h1:hover{
     font-size: 40px;
     text-align: center;
     padding: 0px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .succesStory>h2 {
     margin-top: -33px;
@@ -170,6 +184,7 @@ a >h1:hover{
     text-align: center;
 }
 footer{
+    width: 100%;
     background-color: #F48220;
     display: flex;
     justify-content: space-around;
@@ -183,24 +198,18 @@ footer{
 }
 .address{
     width: 300px;
-
 }
 .address >h1{
     font-size: 24px;
-    /* margin-bottom: 0px; */
     margin-top: 3px; 
     text-align: center;
-
-
 }
 .address >p{
     font-size: 15px;
     margin: 0;
-
     text-align: center;
 }
 .hours{
-    /* margin-left: 40px; */
     width: 300px;
     padding-bottom: 20px;
     margin-bottom: 10px;
@@ -208,25 +217,14 @@ footer{
 .hours >h1{
     text-align: center;
     font-size: 24px;
-     margin-top: 3px; 
-    
+     margin-top: 3px;  
 }
 .hours >p{
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 16px;
-    margin: 0px 
-    
-}
-.indPet{
-    border-radius: 10px;
-    border: solid 10px #F48220;
-    width: 350px;
-    box-shadow: 5px 5px 8px ;
-    margin: 10px;
-    font-size: 22px;
-    text-align: center;
+    margin: 0px    
 }
 .indPet > h3{
     font-size: 24px;
@@ -241,9 +239,17 @@ footer{
     padding-bottom: 1px;
     margin: 0px;
 }
-.indPet > img{
+.indPet >img {
     height: 350px;
+    width: 350px;  
+}
+.indPet{
+    border: solid 10px #F48220;
     width: 350px;
+    box-shadow: 5px 5px 8px ;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
 }
 .petInfo >h3{
     font-size: 28px;
@@ -256,44 +262,37 @@ footer{
     margin: 0px;
     padding-bottom: 7px;
 }
-.pet{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
-    /* how does that look? */ 
-    
-    
-}
 .available{
-    display: flex;
-    flex-direction: column;    
-}
-.pet-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.available{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.pet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;        
+}
+
+.pet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
 .available > button{
-    
     margin: 0;
     border: solid 8px #F48220; 
     background-color: ghostwhite;
     width: 200px;
     height: 18px;
     text-align: center;
-
     display: block;
     font-size: 17px;
     border-radius: 10px;
-    padding-bottom: 28px;        
-    
+    padding-bottom: 28px;           
 } 
 .searchBar{
     border: solid 15px #F48220;
@@ -315,16 +314,15 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #F48220; 
-    width: 50%;
+    width: 70%;
     border-radius: 10px; 
     margin-bottom: 20px; 
     padding-top: 20px; 
     font-size: 19px;
-    font-weight: 500;
-    
+    font-weight: 500;   
 }
 .form > form{
-    width: 60%
+    width: 65%
 }
 form > input[type=text]{
     height: 20px;
@@ -334,7 +332,6 @@ form > input[type=text]{
     /* margin-left: 115px;  */
     margin: -3px;
     text-align: center;
-
 }
 form > input[type=email]{
     height: 20px;
@@ -344,7 +341,6 @@ form > input[type=email]{
     /* margin-left: 115px;  */
     margin-bottom: 0px;
     text-align: center
-
 }
 form > input[type=tel]{
     height: 20px;
@@ -355,7 +351,6 @@ form > input[type=tel]{
     margin-bottom: 0px;
     text-align: center;
 }
-
 .adoptedPets >h2{
     font-size: 40px;
     text-align: center;
@@ -384,14 +379,14 @@ form > input[type=tel]{
 }
 .adopt-image > img{
     width: 100%;
+    border-radius: 2px;
     box-shadow: 5px 5px 5px;
 
 }
 .adopt-image > p{
     text-align: justify;
     padding:  6px 20px;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 .aboutPage{
     display: flex;
@@ -407,6 +402,7 @@ form > input[type=tel]{
     font-size: 40px;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 16px;
 }
 
 .whoWeAre{
@@ -415,7 +411,6 @@ form > input[type=tel]{
     box-shadow: 5px 5px 8px ;
     border-radius: 8px;
     margin-bottom: 20px;
-
 }
 .whoWeAre > h3{
     text-align: center;
@@ -440,6 +435,7 @@ form > input[type=tel]{
 .ourServices > ul{
     text-align: left;
     font-size: 19px;
+    margin-left: 22px;
 }
 .ourNeeds{
     width: 60%;
@@ -455,23 +451,23 @@ form > input[type=tel]{
 .ourNeeds > h5{
     font-size: 18px;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .ourNeeds > ul{
     text-align: left;
     font-size: 19px;
+    margin-left: 22px;
 }
 .form-container >h3{
     font-size: 22px;
     text-align: center;
 }
 form{
-
     margin:  0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* justify-self: center;
-    align-self: center; */
     width: 30%;
     text-align: center;
 }
@@ -482,7 +478,6 @@ form > input[type=text]{
     border-radius: 5%;
     /* margin-left: 115px;  */
     margin-bottom: 30px;
-
 }
 form > input[type=tel]{
     height: 30px;
@@ -501,7 +496,6 @@ form > input[type=tel]{
     color: ghostwhite ;
     font-size: 22px;
     font-weight: bold;
-    
     background-color: #F48220;
 }
 .contact-form{
@@ -511,7 +505,7 @@ form > input[type=tel]{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     height: 380px;
     text-align: center;
     background-color: #F48220;
@@ -529,7 +523,6 @@ form > input[type=tel]{
     width: 80%;
     border: solid 6px #F48220;
     border-radius: 5%;
-    /* margin-left: 115px;  */
     margin-bottom: 10px;
 }
 .contact-form > input[type=email]{
@@ -537,7 +530,6 @@ form > input[type=tel]{
     width: 80%;
     border: solid 6px #F48220;
     border-radius: 5%;
-    /* margin-left: 115px;  */
     margin-bottom: 10px;
 }
 .adoptMe > h2{
@@ -551,7 +543,32 @@ form > input[type=tel]{
 
 
 
-@media screen and (min-width: 375px) and (max-width: 600px){
+@media screen and (min-width: 375px) and (max-width: 601px){
+    .homeMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeMain > div.carousel.carousel{
+        width: 90vw;
+    }
+    .homeMain > div.carousel.carousel > div.horizontalSlider___281Ls.carousel__slider.carousel__slider--horizontal{
+        width: 90vw;
+    }
+    .submitBtn {
+        display: flex;
+        text-align: center;
+        align-self: center;
+        border: 1px grey;
+        border-radius: 8%;
+        background-color: ghostwhite;
+        margin-bottom: 6px;
+        width: 112px;
+        font-size: 14px;
+        
+        height: 20px;
+    }
     .links{
         display: flex;
         flex-direction: row;
@@ -563,7 +580,7 @@ form > input[type=tel]{
         font-size: 25px;
     }
     .links >a{
-        font-size: 15px;
+        font-size: 14px;
     }
     a >h1{
         font-size: 18px;
@@ -585,7 +602,7 @@ form > input[type=tel]{
     
     } 
     .homeMain >h2{
-        font-size: 20px;
+        font-size: 28px;
         text-align: center;
     }
     .carousel{
@@ -598,7 +615,8 @@ form > input[type=tel]{
             border: none;
     }  
     .mission{
-        width: 100%px;   
+        margin-top: -50px;
+        width: 90vw;   
     }
     .mission >p{
         border-radius: 4%;
@@ -606,31 +624,32 @@ form > input[type=tel]{
         padding: 15px;
         text-align: justify;
         width: 100%;
-        font-size: 17px;  
+        font-size: 21px;  
         border: #F48220 5px solid; 
     }
     .homeMain{
         padding: 9px;
     }
     .testimony >p{
-        font-size: 15px;
+        font-size: 19px;
     }
     .succesStory >h4 {
-        font-size: 24px;
+        font-size: 25px;
         text-align: center;
         padding: 0px;
-        margin-top: 10px;
+        margin-top: 18px;
+        margin-bottom: 40px;
     }
     .succesStory>h2 {
         margin-top: -33px;
-        font-size: 21px;
+        font-size: 20px;
         text-align: center;
         font-style: italic;
     }
     .image{
         border: solid 5px #F48220;
         border-radius: 2%; 
-        width: 100%;
+        width: 90vw;
     }
     .image > img{
         width: 100%;
@@ -652,6 +671,7 @@ form > input[type=tel]{
         height: 90px;  
         width: 100%px;
         border: solid 6px #F48220;
+        margin-top: 241px;
     }
     
     .address >h1{
@@ -676,12 +696,28 @@ form > input[type=tel]{
         margin-top: 2px;
         margin-bottom: 0px;
     }
+    .pet-container{
+        margin-bottom: -133px;
+    }
+    .pet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* width: 80vw; */
+        margin-bottom: 120px;
+    }
+    .indPet>img {
+        height: 350px;
+        width: 80vw;
+    }
     .indPet{
         border: solid 10px #F48220;
-      
-        box-shadow: 5px 5px 8px ;
+        width: 300px;
+        box-shadow: 5px 5px 8px;
         margin-top: 10px;
+        
     }
+        
     .indPet > h3{
         font-size: 28px;
         text-align: center;
@@ -695,10 +731,7 @@ form > input[type=tel]{
         padding-bottom: 1px;
         margin: 0px;
     }
-    .indPet > img{
-        height: 310px;
-        width: 100%;
-    }
+    
     .available{
         display: flex;
         flex-direction: column;
@@ -708,11 +741,11 @@ form > input[type=tel]{
     .available > button{
         margin: 0;
         padding-top: 6px;
-        border: solid 8px #F48220;
-        border-radius: 10px;
+        border: solid 4px #F48220;
+        /* border-radius: 10px; */
         background-color: ghostwhite;
         font-size: 15px;
-        width: 150px;
+        width: 155px;
         height: 10px;
         text-align: center;
     }
@@ -761,11 +794,11 @@ form > input[type=tel]{
         flex-direction: column;
     }
     .adopt-image{
-        width: 92%;
+        width: 90%;
         border: #F48220 solid 8px;
     }
     .adopt-image > img{
-        width: 100%;
+        width: 99%;
     }
     .adopt-image > p{
         text-align: justify;
@@ -785,12 +818,10 @@ form > input[type=tel]{
         font-size: 25px;
     }
     form{
-
-        margin:  auto;
+        /* margin:  auto; */
+        margin-bottom: 126px;
         display: flex;
         flex-direction: column;
-        /* justify-self: center;
-        align-self: center; */
         width: fit-content;
         text-align: center;
     }
@@ -801,6 +832,7 @@ form > input[type=tel]{
         border-radius: 5%;
         /* margin-left: 115px;  */
         margin-bottom: 30px;
+        margin-top: -50px;
     
     }
     form > input[type=tel]{
@@ -809,9 +841,10 @@ form > input[type=tel]{
         border: solid 6px #F48220;
         border-radius: 5%;
         /* margin-left: 115px;  */
-        margin-bottom: 10px;
-
-    
+        margin-bottom: 30px;
+    }
+    .adoptMe > div > form > label:nth-child(1){
+        margin-top: -60px;
     }
     .form{
     margin:  auto;
@@ -820,7 +853,7 @@ form > input[type=tel]{
     justify-content: center;
     align-items: center;
     background-color: #F48220; 
-    width: 100%;
+    width: 90%;
     border-radius: 10px; 
     margin-bottom: 20px; 
     padding-top: 20px; 
@@ -897,18 +930,266 @@ form > input[type=tel]{
     .ourNeeds > h3, h5{
         text-align: center;
     }
+    .adoptMe > h2 {
+        text-align: justify;
+        font-size: 26px;
+        margin: 13px;
+    }
+    .contact-form > input[type=text] {
+        height: 40px;
+        width: 100%;
+        border: solid 6px #F48220;
+        border-radius: 5%;
+        margin-bottom: 0px;
+    } 
+    
+    .adoptMe > h2 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 49px;
+    }
+    .contact-form{
+        width: 70%;
+    }
+    .contact-form > input[type=text] {
+        height: 30px;
+        width: 100%;
+        border: solid 2px darkgray;
+        border-radius: 5%;
+        margin-bottom: 0px;
+    }
+    .contact-form > input[type=email] {
+        height: 30px;
+        width: 100%;
+        border: solid 2px darkgray;
+        border-radius: 5%;
+        /* margin-left: 115px; */
+        margin-bottom: 10px;
+    } 
+    .contact-form > input[type=tel] {
+        height: 30px;
+        width: 100%;
+        border: solid 2px darkgray;
+        border-radius: 5%;
+        /* margin-left: 115px; */
+    }
+    .adoptMe > div > form > button{
+        margin: 0;
+        padding-top: 6px;
+        border: solid 1px darkgray;
+        /* border-radius: 10px; */
+        background-color: ghostwhite;
+        font-size: 15px;
+        width: 155px;
+        height: 32px;
+        text-align: center;
+    }
+    .searchBar{
+        border: none;
+    }
+    .searchBar > div > div > div:nth-child(1){
+        width: 100%;
+        background-color:  #F48220;
+        color: aliceblue;
+        border: solid 4px  #F48220;
+    }
+    .searchBar > div > div > div:nth-child(2){
+        width: 100%;
+        background-color:  #F48220;
+        color: aliceblue;
+        border: solid 4px  #F48220;
+    }
+    
     
 
 } 
 @media screen and (min-width: 601px) and (max-width: 968px){ 
+    .homeMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeMain >h2{
+        font-size: 55px;
+    }
+    .succesStory >h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .succesStory >h4 {
+        font-size: 53px;
+        text-align: center;
+        padding: 0px;
+        margin-top: 22px;
+        margin-bottom: 28px;
+    }
+    .available{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
     .available > button{
         margin: 0;
-        border: solid 8px #F48220;
-        border-radius: 10px;
+        border: solid 3px #F48220;
+        border-radius: 5px;
         background-color: ghostwhite;
         font-size: 19px;
-        width: 150px;
+        width: 190px;
         height: 10px;
         text-align: center;
         }
+        .homeMain > div.carousel.carousel{
+            width: 90vw;
+        }
+        .homeMain > div.carousel.carousel > div.horizontalSlider___281Ls.carousel__slider.carousel__slider--horizontal{
+            width: 90vw;
+        }
+        .mission{
+            margin-top: -50px;
+            width: 90vw;   
+        }
+        .mission >p{
+            width: 90vw;
+        }
+        .image{
+            border: solid 5px #F48220;
+            border-radius: 2%; 
+            width: 90vw;
+        }
+        .testimony{
+            padding-bottom: 6px;
+            
+        }
+        .footer {
+            background-color: #F48220;
+            display: flex;
+            justify-content: space-around;
+            height: 100px;
+            width: 99%;
+            border: solid 5px #F48220;
+            color: ghostwhite;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            /* margin-top: 241px; */
+        }
+        
+        .pet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* width: 80vw; */
+        }
+        .indPet>img {
+            height: 350px;
+             width: 70vw; 
+        }
+        .indPet{
+            border: solid 41px #F48220;
+            width: 70vw;
+            box-shadow: 5px 5px 8px ;
+            margin-top: 10px;
+        }
+        .adoptMe {
+            background-color: #F48220;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .adoptMe >a{
+            margin-top: 22px;
+        }
+        .adopt-image {
+            border: solid 15px #F48220;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            border-radius: 1%;
+            width: 89%;
+            margin-bottom: 6px;
+        }
+        .adopt-image > img {
+            width: 100%;
+            border-radius: 2px;
+        }
+        .adoptMe > div > form > button {
+            margin: 0;
+            padding-top: 6px;
+            border: solid 1px darkgray;
+            /* border-radius: 10px; */
+            background-color: ghostwhite;
+            font-size: 15px;
+            width: 155px;
+            height: 32px;
+            text-align: center;
+        }
+        .whoWeAre {
+            width: 90%;
+        }
+        .ourServices {
+            width: 90%;
+        }
+        .ourNeeds {
+            width: 90%;
+            
+        }
+        .form{
+            /* margin: auto; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F48220;
+            width: 80%;
+            border-radius: 10px;
+            margin-bottom: 186px;
+            padding-top: 20px;
+            font-size: 19px;
+            font-weight: 500;
+        
+        }
+        .form-container >h3 {
+            font-size: 22px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .contact-form {
+            margin-bottom: 30px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            height: 380px;
+            text-align: center;
+            background-color: #F48220;
+            border-radius: 4%;
+        }
+        .searchBar > div > div > div:nth-child(1){
+            width: 100%;
+            background-color:  #F48220;
+            color: aliceblue;
+            border: solid 4px  #F48220;
+        }
+        .searchBar > div > div > div:nth-child(2){
+            width: 100%;
+            background-color:  #F48220;
+            color: aliceblue;
+            border: solid 4px  #F48220;
+        }
+        .submitBtn{
+            width: 112px;
+        }
+        
+        
+        
 }       

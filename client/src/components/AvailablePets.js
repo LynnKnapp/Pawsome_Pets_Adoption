@@ -24,7 +24,7 @@ class AvailablePets extends Component {
         console.log(this.changePet)
         return (
             <div className="available">
-                <button onClick={this.togglePet}> Click for Cat/Dog</button>
+                <button onClick={this.togglePet}> Click for Cat or Dog</button>
                 <div className='pet-container'>
                     <div className='pet'>
                         { !this.state.changePet ?

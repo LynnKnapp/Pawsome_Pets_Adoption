@@ -3,11 +3,13 @@ import Carousel from './Carousel'
 const Home = () => {
     return (
         <div className="homeMain">
-            <h2>Finding Forever Homes Since 2009</h2>
-            <Carousel />
-            <section className="mission">
+            <h2>Finding Furever Homes Since 2009</h2>
+            
+                <Carousel />
+    
+            <div className="mission">
                 <p>Pawesome Pets in Utah is working collaboratively with other animal rescue groups, city shelters and passionate individuals who are all dedicated to the mission of making Utah a no-kill state. We provide these no-kill solutions to reduce the number of homeless cats and dogs in Salt Lake County through education, rehabilitation, and re-homing these pets with the support and cooperation of our community.</p>
-            </section>    
+            </div>    
             <div className= 'succesStory'>
                 <h4>Success Story</h4>
                 <h2>Sweetened with Vanilla</h2>

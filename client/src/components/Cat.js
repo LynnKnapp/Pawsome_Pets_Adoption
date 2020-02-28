@@ -16,7 +16,7 @@ const Cat = (props) => {
              </div>
              <div className='adoptMe'>
                 <Link to={{pathname: '/adoption', state:{animalId: props._id, catArray: props.catArray} }}
-                >Adopt Me</Link>
+                >Click Here to Adopt Me</Link>
              </div>   
         </div>
     )
